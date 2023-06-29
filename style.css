@@ -136,7 +136,12 @@ body {
 
 
 #container {
+    max-width: 1536px:
     height: 100dvh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     background: var(--color-page-bg);
     overflow-x: hidden;
 }
@@ -273,6 +278,7 @@ body {
 
 /* Nav Bar */
 .navbar {
+    width: 100%;
     height: 5em;
     background: var(--color-brand-blue);
     display: flex;
@@ -659,7 +665,9 @@ table img {
 
 /* ------------------- Small Screens ------------------ */
 @media (max-width: 475px) {
-
+.container{
+    width: 100%;
+}
 /* Nav Bar */
 .navbar {
     height: 5rem;
@@ -955,7 +963,9 @@ table img {
 
 } */
 @media (max-width: 1024px){
-
+.container {
+    max-width: 475;
+}
 /* Nav Bar */
 .navbar {
     height: 4.5rem;
