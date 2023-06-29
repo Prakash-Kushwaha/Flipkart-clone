@@ -136,22 +136,23 @@ body {
 
 
 #container {
-    height: 100vh;
+    height: 100dvh;
     background: var(--color-page-bg);
+    overflow-x: hidden;
 }
 
 /* -------- Login Box -------- */
 #login {
     display: none;
     position: absolute;
-    z-index: 1;
+    z-index: 5;
     background: #0009;
     pointer-events:visible;
 }
 
 .login-box {
-    height: 100vh;
-    width: 100vw;
+    height: 100svh;
+    width: 100svw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,15 +171,13 @@ body {
 
 .sec-1 {
     height: 100%;
-    width: 40%;
     background: var(--color-brand-blue);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     border-radius: 4px 0 0 4px;
-
-
+    flex-grow: 1;
 }
 
 #title-login {
@@ -200,7 +199,6 @@ body {
 }
 .sec-2 {
     height: 100%;
-    width: 60%;
     background: var(--color-white-bg);
     border-radius: 0 4px 4px 0;
     position: relative;
@@ -208,6 +206,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    flex-grow: 2;
 }
 
 .sec-2 form {
@@ -290,9 +289,10 @@ body {
 }
 
 .search-element {
-    position: relative;
-    width: 25em;
-    height: 2.3em;
+    position: sticky;
+    top: 0;
+    width: 25rem;
+    height: 2.3rem;
     background: #fff;
     border: 2px solid #fff;
     padding: 0px 10px;
@@ -315,7 +315,7 @@ body {
 }
 
 table img {
-    width: 18px;
+    width: 1rem;
 }
 
 #search:focus {
@@ -349,20 +349,19 @@ table img {
 
 /* Items Bar */
 .items-bar {
-    height: 10em;
+    height: 10rem;
     background: var(--color-white-bg);
     box-shadow: -1 3px #000;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.3em;
+    gap: 1.4em;
     margin-bottom: 1.3em;
 }
 
 .category {
     position: relative;
     width: 80px;
-    height: 140px;
     text-align: center;
     cursor: pointer;
 }
@@ -526,20 +525,19 @@ table img {
   to {opacity: 1}
 }
 
-/* ---------- */
-
+/* ---------- info ----------- */
 
 .info {
     background: var(--color-white-bg);
-    margin-top: 3em;
-    padding: 1em;
+    margin-top: 1rem;
+    padding: 1rem;
 }
 
 .info>p {
     color: #878787;
     font-size: 16px;
     font-weight: 800;
-    margin: 1em 0;
+    margin: 1rem 0;
 }
 
 .info>span {
@@ -555,14 +553,14 @@ table img {
 }
 
 .info br {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 /* Footer */
 .bottom-section {
     height: 20rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     background: var(--color-light-black);
     padding: 10px;
@@ -604,7 +602,7 @@ table img {
 .bottom-section #right-part {
     width: 23em;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: left;
     gap: 2em;
 }
@@ -657,3 +655,452 @@ table img {
     text-decoration: none;
     color: var(--color-white-bg);
 }
+
+
+/* ------------------- Small Screens ------------------ */
+@media (width < 475px) {
+
+/* Nav Bar */
+.navbar {
+    height: 5rem;
+    font-size: 1em;
+    gap: 0.8rem;
+    padding: 1rem;
+}
+#nav-logo {
+    width: 3.6rem;
+}
+.search-element {
+  width: 14rem;
+  height: 2rem;
+}
+
+#login-button {
+    font-size: 1em;
+}
+
+/* Items Bar */
+.items-bar {
+    height: 15rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.category > img {
+    width: 2.8rem;
+}
+
+.dp-menu {
+    width: 10rem;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+
+.menu-list {
+    line-height: 1.3rem;
+    text-align: left;
+    padding: 5px;
+}
+
+.menu-list>a {
+    padding: 5px;
+}
+
+.nav-arrow {
+    width: 8px;
+    margin-top: 2px;
+}
+
+/* Wrapper */
+#banner,
+.row2,
+.row3,
+.row4,
+.row5 {
+    width: 96%;
+    height: 15em;
+}
+
+#banner {
+    height: 8rem;
+}
+
+.slideshow-container img {
+    width: 100%;
+    height: 8rem;
+}
+
+
+/* info */
+.info>p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.info>span {
+    font-size: 10px;
+    line-height: 0.3em;
+
+}
+
+/* footer */
+.bottom-section {
+    height: 15rem;
+    padding: 0.6rem;
+    gap: 2rem;
+}
+
+.bottom-section #left-part {
+    width: 13em;
+    gap: 0.6rem;
+}
+
+#left-part div {
+    gap: 0.3em;
+    font-size: 8px;
+}
+
+#left-part>div>a {
+    line-height: 0.7rem;
+}
+
+
+#left-part>div>p {
+    margin-bottom: 0.7em;
+    font-size: 9px;
+}
+
+.bottom-section #right-part {
+    width: 11em;
+    gap: 1rem;
+}
+
+.vert-line {
+    height: 7rem;
+    width: 0.1rem;
+}
+
+#right-part div {
+    font-size: 8px;
+}
+
+#right-part>div>p {
+    margin-bottom: 0.4rem;
+    font-size: 9px;
+}
+
+#right-part>div>span {
+    line-height: 0.7rem;
+}
+
+.bottom-nav {
+    height: 3rem;
+    font-size: 9px;
+    gap: 1rem;
+}
+.bottom-nav img {
+    height: 1em;
+}
+
+}
+
+@media (width < 640px){
+
+/* Nav Bar */
+.navbar {
+    height: 5rem;
+    font-size: 1em;
+    gap: 0.8rem;
+    padding: 1rem;
+}
+#nav-logo {
+    width: 3.6rem;
+}
+.search-element {
+  width: 14rem;
+  height: 2rem;
+}
+
+#login-button {
+    font-size: 1em;
+}
+
+/* Items Bar */
+.items-bar {
+    height: 15rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.category > img {
+    width: 2.8rem;
+}
+
+.dp-menu {
+    width: 10rem;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+
+.menu-list {
+    line-height: 1.3rem;
+    text-align: left;
+    padding: 5px;
+}
+
+.menu-list>a {
+    padding: 5px;
+}
+
+.nav-arrow {
+    width: 8px;
+    margin-top: 2px;
+}
+
+/* Wrapper */
+#banner,
+.row2,
+.row3,
+.row4,
+.row5 {
+    width: 96%;
+    height: 15em;
+}
+
+#banner {
+    height: 8rem;
+}
+
+.slideshow-container img {
+    width: 100%;
+    height: 8rem;
+}
+
+
+/* info */
+.info>p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.info>span {
+    font-size: 11px;
+    line-height: 0.6em;
+
+}
+
+/* footer */
+.bottom-section {
+    height: 15rem;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.bottom-section #left-part {
+    width: 14rem;
+    gap: 1rem;
+}
+
+#left-part div {
+    gap: 0.8em;
+    font-size: 10px;
+}
+
+#left-part>div>a {
+    line-height: 0.7rem;
+}
+
+
+#left-part>div>p {
+    margin-bottom: 0.7em;
+    font-size: 11px;
+}
+
+.bottom-section #right-part {
+    width: 13em;
+    gap: 1rem;
+}
+
+.vert-line {
+    height: 7rem;
+    width: 0.1rem;
+}
+
+#right-part div {
+    font-size: 10px;
+}
+
+#right-part>div>p {
+    margin-bottom: 0.4rem;
+    font-size: 11px;
+}
+
+#right-part>div>span {
+    line-height: 1rem;
+}
+
+.bottom-nav {
+    height: 3rem;
+    font-size: 11px;
+    gap: 1rem;
+}
+.bottom-nav img {
+    height: 1.2em;
+}
+
+}
+/* @media (min-width: 768px){
+
+} */
+@media (width < 1024px){
+
+/* Nav Bar */
+.navbar {
+    height: 4.5rem;
+    font-size: 1.2em;
+    gap: 1rem;
+    padding: 1rem;
+}
+#nav-logo {
+    width: 4rem;
+}
+.search-element {
+  width: 20rem;
+  height: 2rem;
+}
+
+#login-button {
+    font-size: 1em;
+}
+
+/* Items Bar */
+.items-bar {
+    height: 8rem;
+    padding: 1rem;
+}
+
+.category > img {
+    width: 4rem;
+}
+
+.dp-menu {
+    width: 14rem;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.menu-list {
+    line-height: 1.5rem;
+    padding: 8px;
+}
+
+.menu-list>a {
+    padding: 5px;
+}
+
+.nav-arrow {
+    width: 10px;
+    margin-top: 4px;
+}
+
+/* Wrapper */
+#banner,
+.row2,
+.row3,
+.row4,
+.row5 {
+    width: 98%;
+    height: 18em;
+}
+
+#banner {
+    height: 12rem;
+}
+
+.slideshow-container img {
+    width: 100%;
+    height: 12rem;
+}
+
+
+/* info */
+.info>p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.info>span {
+    font-size: 13px;
+    line-height: 0.8em;
+
+}
+
+/* footer */
+.bottom-section {
+    height: 20rem;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.bottom-section #left-part {
+    width: 15em;
+    gap: 1em;
+}
+
+#left-part div {
+    gap: 0.6rem;
+    font-size: 11px;
+}
+
+#left-part>div>a {
+    line-height: 1em;
+}
+
+
+#left-part>div>p {
+    margin-bottom: 0.8em;
+    font-size: 13px;
+}
+
+.bottom-section #right-part {
+    width: 18rem;
+    gap: 1rem;
+}
+
+.vert-line {
+    height: 8rem;
+    width: 0.1rem;
+}
+
+#right-part div {
+    font-size: 11px;
+}
+
+#right-part>div>p {
+    margin-bottom: 0.4rem;
+    font-size: 13px;
+}
+
+#right-part>div>span {
+    line-height: 1rem;
+}
+
+.bottom-nav {
+    height: 4rem;
+    font-size: 12px;
+    gap: 1rem;
+}
+.bottom-nav img {
+    height: 1.5em;
+}
+
+/* }
+@media (width < 1280px){
+
+}
+@media (width < 1536px){
+
+} */
