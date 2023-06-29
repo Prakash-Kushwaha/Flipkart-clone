@@ -279,7 +279,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 2;
 }
@@ -658,7 +658,7 @@ table img {
 
 
 /* ------------------- Small Screens ------------------ */
-@media (width < 475px) {
+@media (max-width: 475px) {
 
 /* Nav Bar */
 .navbar {
@@ -805,7 +805,7 @@ table img {
 
 }
 
-@media (width < 640px){
+@media (max-width: 640px){
 
 /* Nav Bar */
 .navbar {
@@ -951,10 +951,10 @@ table img {
 }
 
 }
-/* @media (min-width: 768px){
+/* @media (max-width: 768px){
 
 } */
-@media (width < 1024px){
+@media (max-width: 1024px){
 
 /* Nav Bar */
 .navbar {
@@ -1098,9 +1098,9 @@ table img {
 }
 
 /* }
-@media (width < 1280px){
+@media (max-width: 1280px){
 
 }
-@media (width < 1536px){
+@media (max-width: 1536px){
 
 } */
