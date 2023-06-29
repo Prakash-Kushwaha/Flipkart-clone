@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Site | Shopping Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+    <div id="container">
+        <section id="login">
+            <div class="login-box">
+                <div class="login-window">
+                    <div class="sec-1">
+                        <span id="title-login">Login</span>
+                        <span class="txt-login">Get access to your Orders, Wishlist
+                            and recommendations
+                        </span>
+                        <img src="assets/login_img.png" alt="" class="sec-1--img">
+                    </div>
+                    <div class="sec-2">
+                        <img src="assets/cancel.png" id="login-close" onclick="closeLogin()">
+                        <form>
+                            <div>
+                                <label for="email">Enter Email/Mobile number</label><br>
+                                <input type="text" id="email">
+                            </div>
+                            <div id="login-terms">By continuing, you agree to FlipKart's <a href="#">Terms of Use</a>
+                                and <a href="#">Privacy Policy</a>
+                            </div>
+                            <button class="otp-btn">Request OTP</button>
+                        </form>
+                        <span><a href="#">New to Flipkart? Create an account</a></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <header>
+            <nav class="navbar">
+                <a href="index.html"><img src="./assets/logo.png" id="nav-logo"></a>
+                <div class="search-element">
+                    <table class="search-bar">
+                        <tr>
+                            <td>
+                                <input type="text" id="search" placeholder="Search for products, brands and more">
+                            </td>
+                            <td><a href="#"><img src="assets/search.png"></a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="login-button" onclick="openLogin()"><a href="#">Login</a></div>
+                <a href="https://seller.flipkart.com/sell-online/?utm_source=fkwebsite&utm_medium=websitedirect"
+                    id="nav-link">Become a Seller</a>
+                <p class="nav-para">More</p>
+                <p class="nav-para">Cart</p>
+            </nav>
+            <nav class="items-bar">
+                <section class="category grocery"><img src="assets/grocery.webp" alt=""><a href="#">Grocery</a>
+                </section>
+                <section class="category mobiles"><img src="assets/mobiles.webp" alt="">Mobiles
+                </section>
+                <section class="category fashion">
+                    <img src="assets/fashion.webp" alt="">
+                    <span>
+                        <p>Fashion</p>
+                        <img class="nav-arrow" src="assets/arrow-down.png">
+                    </span>
+                    <div class="dp-menu">
+                        <div class="menu-list">
+                            <a href="#">Men's Top Wear</a>
+                            <a href="#">Men's Bottom Wear</a>
+                            <a href="#">Women Ethnic</a>
+                            <a href="#">Women Western</a>
+                            <a href="#">Men Footwear</a>
+                            <a href="#">Women Footwear</a>
+                            <a href="#">Watches & Accessories</a>
+                            <a href="#">Bags, Suitcases & Luggage</a>
+                            <a href="#">Kids</a>
+                            <a href="#">Essentials</a>
+                            <a href="#">Winter</a>
+                        </div>
+
+                    </div>
+                </section>
+                <section class="category electronics" onmouseenter="dpMenu(this)" onmouseleave="closeMenu(this)"><img
+                        src="assets/electronics.webp" alt="">
+                    <span>
+                        <p>Electronics</p>
+                        <img class="nav-arrow" src="assets/arrow-down.png">
+                    </span>
+                    <div class="dp-menu">
+                        <div class="menu-list">
+                            <a href="#">Audio</a>
+                            <a href="#">Electronics GST Store</a>
+                            <a href="#">Cameras & Accessories</a>
+                            <a href="#">Computer Peripherals</a>
+                            <a href="#">Gaming</a>
+                            <a href="#">Health & Personal Care</a>
+                            <a href="#">Laptop Acessories</a>
+                            <a href="#">Laptop & Desktop</a>
+                            <a href="#">Mobile Accessories</a>
+                            <a href="#">Powerbank</a>
+                            <a href="#">Smart Home Automation</a>
+                            <a href="#">Smart Wearables</a>
+                            <a href="#">Storage</a>
+                            <a href="#">Tablets</a>
+
+
+
+                        </div>
+                    </div>
+                </section>
+                <section class="category home" onmouseenter="dpMenu(this)" onmouseleave="closeMenu(this)"><img
+                        src="assets/home.webp" alt="">
+                    <span>
+                        <p>Home</p>
+                        <img class="nav-arrow" src="assets/arrow-down.png">
+                    </span>
+                    <div class="dp-menu">
+                        <div class="menu-list">
+                            <a href="#">Home Furnishings</a>
+                            <a href="#">Furniture Studio</a>
+                            <a href="#">Living Room Furniture</a>
+                            <a href="#">Kitchen & Dining</a>
+                            <a href="#">Bedroom Furniture</a>
+                            <a href="#">Home Decor</a>
+                            <a href="#">Tools & Utility</a>
+                            <a href="#">Workspace Furniture</a>
+                            <a href="#">Lightings & Electricals</a>
+                            <a href="#">Sapce Saving Furniture</a>
+                            <a href="#">Cleaning & Bath</a>
+                            <a href="#">Kids Furniture</a>
+                            <a href="#">Pet & Gardening</a>
+
+
+
+
+                        </div>
+                    </div>
+                </section>
+                <section class="category appliances"><img src="assets/appliances.webp" alt="">Appliances
+                </section>
+                <section class="category offers"><img src="assets/top-offers.webp" alt="">Top
+                    Offers
+                </section>
+                <section class="category toys" onmouseenter="dpMenu(this)" onmouseleave="closeMenu(this)"><img
+                        src="assets/toys.webp" alt="">
+                    <span>
+                        <p>Beauty, Toys & More</p>
+                        <img class="nav-arrow" src="assets/arrow-down.png">
+                    </span>
+                    <div class="dp-menu">
+                        <div class="menu-list">
+                            <a href="#">Beauty & Personal Care</a>
+                            <a href="#">Men's Grooming</a>
+                            <a href="#">Food & Drinks</a>
+                            <a href="#">Nutrition & Health Care</a>
+                            <a href="#">Baby Care</a>
+                            <a href="#">Toys & School Supplies</a>
+                            <a href="#">Sports & Fitness</a>
+                            <a href="#">Books</a>
+                            <a href="#">Music</a>
+                            <a href="#">Stationary & Office Supplies</a>
+                            <a href="#">Auto Accessories</a>
+                            <a href="#">Safety & Hygiene Essentials</a>
+
+
+                        </div>
+                    </div>
+                </section>
+
+            </nav>
+        </header>
+        <main class="wrapper">
+            <section id="banner">
+                <!-- <div class="banner-before" onclick="prevBanner()"><img src="assets/lt.png"></div>
+                <div class="banner-after" onclick="afterBanner()"><img src="assets/gt.png"></div> -->
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <img src="assets/banner0.webp">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="assets/banner1.webp">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="assets/banner4.webp">
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+            </section>
+            <section class="row2"></section>
+            <section class="row3"></section>
+            <section class="row4"></section>
+            <section class="row5"></section>
+            <section class="info">
+                <p>Flipkart: The One-stop Shopping Destination</p>
+                <span>E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store
+                    to
+                    another in search of the latest phone when you can find it on the Internet in a single click? Not
+                    only
+                    mobiles. Flipkart houses everything you can possibly imagine, from trending electronics like
+                    laptops,
+                    tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and
+                    lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to
+                    appliances
+                    that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other
+                    time-saving
+                    kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets to
+                    toys and musical instruments, we got them all covered. You name it, and you can stay assured about
+                    finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop
+                    in
+                    your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down.
+
+                    What's more, with our year-round shopping festivals and events, our prices are irresistible. We're
+                    sure
+                    you'll find yourself picking up more than what you had in mind. If you are wondering why you should
+                    shop
+                    from Flipkart when there are multiple options available to you, well, the below will answer your
+                    question. </span>
+
+                <p>Flipkart Plus</p>
+                <span>A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty reward
+                    programme for all its regular customers at zero subscription fee. All you need is 500 supercoins to
+                    be a
+                    part of this service. For every 100 rupees spent on Flipkart order, Plus members earns 4 supercoins
+                    &
+                    non-plus members earn 2 supercoins. Free delivery, early access during sales and shopping festivals,
+                    exchange offers and priority customer service are the top benefits to a Flipkart Plus member. In
+                    short,
+                    earn more when you shop more!
+                    <br>
+                    What's more, you can even use the Flipkart supercoins for a number of exciting services, like:
+                    An annual Zomato Gold membership
+                    An annual Hotstar Premium membership
+                    6 months Gaana plus subscription
+                    Rupees 550 instant discount on flights on ixigo
+                    Check out https://www.flipkart.com/plus/all-offers for the entire list. Terms and conditions
+                    apply.</span>
+
+                <p>No Cost EMI</p>
+                <span>In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to
+                    shop
+                    with us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops,
+                    large
+                    and small appliances, furniture, electronics and watches, you can now shop without burning a hole in
+                    your pocket. If you've been eyeing a product for a long time, chances are it may be up for a no cost
+                    EMI. Take a look ASAP! Terms and conditions apply.</span>
+
+                <p>EMI on Debit Cards</p>
+                <span>Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14
+                    crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online
+                    shopping accessible to everyone, Flipkart introduces EMI on Debit Cards, empowering you to shop
+                    confidently with us without having to worry about pauses in monthly cash flow. At present, we have
+                    partnered with Axis Bank, HDFC Bank, State Bank of India and ICICI Bank for this facility. More
+                    power to
+                    all our shoppers! Terms and conditions apply. </span>
+
+                <p>Mobile Exchange Offers</p>
+                <span>Get an instant discount on the phone that you have been eyeing on. Exchange your old mobile for a
+                    new
+                    one after the Flipkart experts calculate the value of your old phone, provided it is in a working
+                    condition without damage to the screen. If a phone is applicable for an exchange offer, you will see
+                    the
+                    'Buy with Exchange' option on the product description of the phone. So, be smart, always opt for an
+                    exchange wherever possible. Terms and conditions apply. </span>
+
+                <p>What Can You Buy From Flipkart?</p>
+                <p>Mobile Phones</p>
+                <span>From budget phones to state-of-the-art smartphones, we have a mobile for everybody out there.
+                    Whether
+                    you're looking for larger, fuller screens, power-packed batteries, blazing-fast processors,
+                    beautification apps, high-tech selfie cameras or just large internal space, we take care of all the
+                    essentials. Shop from top brands in the country like Samsung, Apple, Oppo, Xiaomi, Realme, Vivo, and
+                    Honor to name a few. Rest assured, you're buying from only the most reliable names in the market.
+                    What's
+                    more, with Flipkart's Complete Mobile Protection Plan, you will never again find the need to run
+                    around
+                    service centres. This plan entails you to a number of post-purchase solutions, starting at as low as
+                    Rupees 99 only! Broken screens, liquid damage to phone, hardware and software glitches, and
+                    replacements
+                    - the Flipkart Complete Mobile Protection covers a comprehensive range of post-purchase problems,
+                    with
+                    door-to-door services. </span>
+
+                <p>Electronic Devices and Accessories</p>
+                <span>When it comes to laptops, we are not far behind. Filter among dozens of super-fast operating
+                    systems,
+                    hard disk capacity, RAM, lifestyle, screen size and many other criterias for personalized results in
+                    a
+                    flash. All you students out there, confused about what laptop to get? Our Back To College Store
+                    segregates laptops purpose wise (gaming, browsing and research, project work, entertainment, design,
+                    multitasking) with recommendations from top brands and industry experts, facilitating a shopping
+                    experience that is quicker and simpler.
+                    <br>
+                    Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever
+                    reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for
+                    adventure
+                    junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon,
+                    GoPro,
+                    Sony, and Fujifilm are some big names you'll find in our store. Photography lovers, you couldn't
+                    land at
+                    a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras,
+                    millennial
+                    favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much
+                    for
+                    beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names
+                    you'll
+                    find in our store.
+                    <br>
+                    Turn your home into a theatre with a stunning surround sound system. Choose from our elaborate range
+                    of
+                    Sony home theatres, JBL soundbars and Philips tower speakers for an experience to remember.
+                    <br>
+                    How about jazzing up your phone with our quirky designer cases and covers? Our wide-ranging mobile
+                    accessories starting from headphones, power banks, memory cards, mobile chargers, to selfie sticks
+                    can
+                    prove to be ideal travel companions for you and your phone; never again worry about running out of
+                    charge or memory on your next vacation.
+                </span>
+
+                <p>Large Appliances</p>
+                <span>Sleek TVs, power-saving refrigerators, rapid-cooling ACs, resourceful washing machines - discover
+                    everything you need to run a house under one roof. Our Dependable TV and Appliance Store ensures
+                    zero
+                    transit damage, with a replacement guarantee if anything goes wrong; delivery and installation as
+                    per
+                    your convenience and a double warranty (Official Brand Warranty along with an extended Flipkart
+                    Warranty) - rest assured, value for money is what is promised and delivered. Shop from market
+                    leaders in
+                    the country like Samsung, LG, Whirlpool, Midea, Mi, Vu, Panasonic, Godrej, Sony, Daikin, and Hitachi
+                    among many others.
+                    <br>
+                    For certain product categories, Customers meeting the eligibility criteria will have the option to
+                    buy
+                    larger quantities. To know more on the eligibility criteria and terms and conditions, please reach
+                    out
+                    to <a href="#">Purchases.oni@flipkart.com</a>.
+                </span>
+
+                <p>Small Home Appliances</p>
+                <span>Find handy and practical home appliances designed to make your life simpler: electric kettles,
+                    OTGs,
+                    microwave ovens, sandwich makers, hand blenders, coffee makers, and many more other time-saving
+                    appliances that are truly crafted for a quicker lifestyle. Live life king size with these appliances
+                    at
+                    home.</span>
+
+
+                <p>Lifestyle</p>
+                <span>Flipkart, 'India ka Fashion Capital', is your one-stop fashion destination for anything and
+                    everything
+                    you need to look good. Our exhaustive range of Western and Indian wear, summer and winter clothing,
+                    formal and casual footwear, bridal and artificial jewellery, long-lasting make-up, grooming tools
+                    and
+                    accessories are sure to sweep you off your feet. Shop from crowd favourites like Vero Moda, Forever
+                    21,
+                    Only, Arrow, Woodland, Nike, Puma, Revlon, Mac, and Sephora among dozens of other top-of-the-ladder
+                    names. From summer staple maxi dresses, no-nonsense cigarette pants, traditional Bandhani kurtis to
+                    street-smart biker jackets, you can rely on us for a wardrobe that is up to date. Explore our
+                    in-house
+                    brands like Metronaut, Anmi, and Denizen, to name a few, for carefully curated designs that are the
+                    talk
+                    of the town. Get ready to be spoiled for choice.Festivals, office get-togethers, weddings, brunches,
+                    or
+                    nightwear - Flipkart will have your back each time.</span>
+
+                <p>Home and Furniture</p>
+                <span>Moving to a new place is never easy, especially if you're buying new furniture. Beds, sofa sets,
+                    dining tables, wardrobes, and TV units - it's not easy to set up everything again. With the hundreds
+                    of
+                    options thrown at you, the ride could be overwhelming. What place is reliable, what furniture will
+                    stand
+                    the test of time? These are questions you must ask before you choose a store. Well, our Durability
+                    Certified Furniture Store has not only curated a range of furniture keeping in mind the modern
+                    Indian
+                    consumer but furniture that comes with a lab certification, ensuring they last you for up to 10
+                    years.
+                    Yes, all our furniture has gone through 35 stability and load tests so that you receive only the
+                    best-quality furniture. Be FurniSure, always. Names to look out for are Nilkamal, Godrej Interio,
+                    Urban
+                    Ladder, HomeTown, Durian and Perfect Homes.
+                    <br>
+                    You may have your furniture all set up, but they could end up looking flat and incomplete without
+                    complementary decor. Curtains, cushion covers, bed sheets, wall shelves, paintings, floor lamps -
+                    find
+                    everything that turns a house to an inviting home under one roof at Flipkart. </span>
+
+                <p>Baby and Kids</p>
+                <span>Your kids deserve only the best. From bodysuits, booties, diapers to strollers, if you're an
+                    expecting
+                    mother or a new mother, you will find everything you need to set sail on a smooth parenting journey
+                    with
+                    the help of our baby care collection. When it comes to safety, hygiene and comfort, you can rely on
+                    us
+                    without a second thought. Huggies, Pampers, MamyPoko, and Johnson & Johnson: we host only the
+                    most-trusted names in the business for your baby.</span>
+
+                <p>Books, Sports and Games</p>
+                <span>Work hard and no play? We don't believe in that. Get access to best-selling fiction and
+                    non-fiction
+                    books by your favourite authors, thrilling English and Indian blockbusters, most-wanted gaming
+                    consoles,
+                    and a tempting range of fitness and sports gadgets and equipment bound to inspire you to get moving.
+                </span>
+
+                <p>Grocery/Supermart</p>
+                <span>Launching into the grocery vertical, Flipkart introduces Supermart that is out to bring everyday
+                    essentials close to you. From pulses, spices, dairy, personal and sanitary care, breakfast
+                    essentials,
+                    health drinks, spreads, ready to cook, grooming to cleaning agents, we are happy to present
+                    everything
+                    you need to run a house. Now buy Grocery products for as low as 1 Rupee only - our 1 Rupee Store
+                    presents new products every day for a nominal price of 1 Rupee only. Terms and conditions
+                    apply.</span>
+            </section>
+        </main>
+        <footer>
+            <div class="bottom-section">
+                <section id="left-part">
+                    <div id="about">
+                        <p>ABOUT</p>
+                        <a href="profile.html">Contact Us</a>
+                        <a href="https://corporate.flipkart.net/corporate-home">About Us</a>
+                        <a href="https://www.flipkartcareers.com/?otracker=undefined_footer_navlinks">Careers</a>
+                        <a href="http://stories.flipkart.com/?otracker=undefined_footer_navlinks">Flipkart Stories</a>
+                        <a href="https://www.flipkart.com/s/press?otracker=undefined_footer_navlinks">Press</a>
+                        <a href="https://www.flipkartwholesale.com/?otracker=undefined_footer_navlinks">Flipkart
+                            Wholesale</a>
+                        <a href="https://www.flipkart.com/corporate-information">Corporate Information</a>
+                    </div>
+                    <div id="help">
+                        <p>HELP</p>
+                        <a href="https://www.flipkart.com/pages/payments">Payments</a>
+                        <a href="https://www.flipkart.com/pages/shipping">Shipping</a>
+                        <a href="https://www.flipkart.com/helpcentre?catalog=55c9c6edb000002e002c1701&view=CATALOG">Cancellation
+                            & Returns</a>
+                        <a
+                            href="https://www.flipkart.com/helpcentre?catalog=55c9c8e2b0000023002c1702&view=CATALOG">FAQ</a>
+                        <a href="https://seller.flipkart.com/fiv?otracker=undefined_footer_navlinks">Report
+                            Infringement</a>
+                    </div>
+                    <div id="consumer-policy">
+                        <p>CONSUMER POLICY</p>
+                        <a href="https://www.flipkart.com/pages/returnpolicy?otracker=undefined_footer_navlinks">Return
+                            Policy</a>
+                        <a href="https://www.flipkart.com/pages/terms?otracker=undefined_footer_navlinks">Terms Of
+                            Use</a>
+                        <a
+                            href="https://www.flipkart.com/pages/paymentsecurity?otracker=undefined_footer_navlinks">Security</a>
+                        <a
+                            href="https://www.flipkart.com/pages/privacypolicy?otracker=undefined_footer_navlinks">Privacy</a>
+                        <a href="https://www.flipkart.com/sitemap?otracker=undefined_footer_navlinks">Sitemap</a>
+                        <a
+                            href="https://www.flipkart.com/pages/grievance-redressal-mechanism?otracker=undefined_footer_navlinks">Grievance
+                            Redressal</a>
+                        <a
+                            href="https://www.flipkart.com/pages/ewaste-compliance-tnc?otracker=undefined_footer_navlinks">EPR
+                            Compliance</a>
+                    </div>
+                    <div id="social">
+                        <p>SOCIAL</p>
+                        <a href="https://www.facebook.com/flipkart">Facebook</a>
+                        <a href="https://www.twitter.com/flipkart">Twitter</a>
+                        <a href="https://www.youtube.com/flipkart">YouTube</a>
+                    </div>
+                </section>
+                <div class="vert-line"></div>
+                <section id="right-part">
+                    <div id="main-us">
+                        <p>Mail Us:</p>
+                        <span>Flipkart Internet Private Limited, Buildings Alyssa
+                            Begonia & Clove Embassy Tech Village,
+                            Outer Ring Road, Devarabeesanahalli Village,
+                            Bengaluru, 560103, Karnatka, India
+                        </span>
+                    </div>
+
+                    <div id="address">
+                        <p>Registered Office Address:</p>
+                        <span>Flipkart Internet Private Limited,
+                            Buildings Alyssa, Begonia &
+                            Clove Embassy Tech Village,
+                            Outer Ring Road, Devarabeesanahalli Village,
+                            Bengaluru, 560103,
+                            Karnatka, India
+                            CIN: U51109KA2012PTC066107
+                            Telephone: <a href="tel:044-45614700">044-45614700</a>
+                        </span>
+                    </div>
+                </section>
+            </div>
+
+            <nav class="bottom-nav">
+                <div>
+                    <img src="assets/seller.svg">
+                    <a href="https://seller.flipkart.com/?utm_source=fkwebsite&utm_medium=websitedirect">Become a
+                        Seller</a>
+                </div>
+                <div>
+                    <img src="assets/advertise.svg">
+                    <a href="https://brands.flipkart.com/">Advertise</a>
+                </div>
+                <div>
+                    <img src="assets/gift.svg">
+                    <a href="https://www.flipkart.com/the-gift-card-store?otracker=undefined_footer_footer_navlinks">Gift
+                        Cards</a>
+                </div>
+                <div>
+                    <img src="assets/help.svg">
+                    <a href="https://www.flipkart.com/helpcentre?otracker=undefined_footer_footer_navlinks">Help
+                        Center</a>
+                </div>
+                <div>
+                    <p>&copy;2007-2023 Flipkart.com</p>
+                </div>
+                <div>
+                    <img src="assets/payment-method.svg">
+                </div>
+            </nav>
+        </footer>
+    </div>
+    <script defer src="main.js"></script>
+</body>
+
+</html>
