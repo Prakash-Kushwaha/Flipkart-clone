@@ -359,6 +359,7 @@ table img {
     margin-top: 5em;
     margin-bottom: 1.3em;
     flex-wrap: wrap;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
 }
 
 .category {
@@ -388,7 +389,7 @@ table img {
     width: 15rem;
     background: var(--color-white-bg);
     border-radius: 3px;
-    box-shadow: 0 1px 10px 0 #272727;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
     transform: translateX(-4em);
 }
 
@@ -465,6 +466,7 @@ table img {
     height: 23rem;
     background: var(--color-white-bg);
     position: relative;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
 }
 
 .wrapper-items {
@@ -545,6 +547,10 @@ table img {
     color: #838383;
 }
 
+#wrapper-content--fridge {
+    width: 8rem;
+}
+
 #banner {
     height: 13rem;
 }
@@ -584,7 +590,7 @@ table img {
     border-radius: 0 3px 3px 0;
     user-select: none;
     background: #fff;
-    box-shadow: 1px 2px 6px 0 #000;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
 }
 
 /* Position the "next button" to the right */
@@ -615,6 +621,7 @@ table img {
     background: var(--color-white-bg);
     margin-top: 2rem;
     padding: 1rem;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
 }
 
 .info>p {
