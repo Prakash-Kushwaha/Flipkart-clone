@@ -348,6 +348,10 @@ table img {
     font-weight: var(--font-medium);
 }
 
+.nav-para {
+    cursor: pointer;
+}
+
 /* Items Bar */
 .items-bar {
     background: var(--color-white-bg);
