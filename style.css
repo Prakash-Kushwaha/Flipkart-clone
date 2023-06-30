@@ -276,7 +276,7 @@ body {
 
 /* Nav Bar */
 .navbar {
-    width: 100%;
+    width: 100vw;
     height: 4rem;
     background: var(--color-brand-blue);
     display: flex;
@@ -286,6 +286,11 @@ body {
     position: fixed;
     top: 0;
     z-index: 3;
+}
+
+#nav-cart {
+    width: 1rem;
+    filter: invert();
 }
 
 #nav-logo {
@@ -352,17 +357,20 @@ table img {
 .nav-para {
     cursor: pointer;
 }
+
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 300,
-  'GRAD' 0,
-  'opsz' 12
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 12
 }
+
 /* Items Bar */
 .items-bar--mobile {
     display: none;
 }
+
 .items-bar {
     background: var(--color-white-bg);
     box-shadow: -1 3px #000;
@@ -373,7 +381,7 @@ table img {
     gap: 1rem;
     margin-top: 4.6em;
     margin-bottom: 1.3em;
-    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
 }
 
 .category {
@@ -403,7 +411,7 @@ table img {
     width: 15rem;
     background: var(--color-white-bg);
     border-radius: 3px;
-    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
     transform: translateX(-4em);
 }
 
@@ -480,7 +488,7 @@ table img {
     height: 20rem;
     background: var(--color-white-bg);
     position: relative;
-    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
 }
 
 .wrapper-items {
@@ -522,7 +530,8 @@ table img {
     justify-content: space-around;
     align-items: center;
     gap: 1rem;
-    overflow-x: scroll;
+    overflow: auto;
+    padding-left: 3rem;
 }
 
 .wrapper-content div {
@@ -559,7 +568,7 @@ table img {
     color: #838383;
 }
 
-.wrapper-content > div img {
+.wrapper-content>div img {
     width: 6rem;
 }
 
@@ -606,7 +615,7 @@ table img {
     border-radius: 0 3px 3px 0;
     user-select: none;
     background: #fff;
-    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
 }
 
 /* Position the "next button" to the right */
@@ -637,7 +646,7 @@ table img {
     background: var(--color-white-bg);
     margin-top: 2rem;
     padding: 1rem;
-    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
 }
 
 .info>p {

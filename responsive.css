@@ -4,6 +4,20 @@
         display: none;
     }
 
+    .navbar-mobile {
+        display: block;
+        width: 100vw;
+        height: 5rem;
+        background: var(--color-brand-blue);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        z-index: 3;
+        position: fixed;
+        top: 0;
+    }
+
     #mobile-nav {
         display: flex;
         flex-direction: column;
@@ -20,6 +34,18 @@
         align-items: center;
     }
 
+    #nav-row1 div img {
+        width: 1rem;
+        filter: invert();
+        margin-right: 0.6rem;
+    }
+
+    #nav-row1 div a {
+        text-decoration: none;
+        color: var(--color-white-bg);
+        font-size: 0.8rem;
+    }
+
     #nav-row2 {
         width: 21rem;
         position: sticky;
@@ -30,20 +56,6 @@
         border-radius: 2px;
         background: var(--color-white-bg);
 
-    }
-
-    .navbar-mobile {
-        display: block;
-        width: 100%;
-        height: 5rem;
-        background: var(--color-brand-blue);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        z-index: 3;
-        position: fixed;
-        top: 0;
     }
 
     .items-bar {
@@ -82,7 +94,7 @@
 
     #banner,
     .slideshow-container img {
-        height: 8rem;
+        height: 7rem;
     }
 
     .cover {
@@ -121,11 +133,101 @@
     #wrapper-content--fridge {
         width: 2.5rem;
     }
+
+    .info>p {
+        font-size: 0.8rem;
+        font-weight: 800;
+        margin: 1rem 0;
+    }
+
+    .info>span {
+        font-size: 0.6rem;
+        line-height: 0.8rem;
+    }
+
+    .bottom-section {
+        height: 12rem;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .bottom-section #left-part {
+        gap: 0.5rem;
+    }
+
+    #left-part div {
+        gap: 0.2rem;
+        font-size: 0.3rem;
+    }
+
+    #left-part>div>a {
+        line-height: 0.5rem;
+    }
+
+    #left-part>div>p {
+        margin-bottom: 0.5rem;
+        font-size: 0.6rem;
+    }
+
+    .bottom-section #right-part {
+        width: 10rem;
+        gap: 1rem;
+    }
+
+    .vert-line {
+        height: 5rem;
+        width: 0.1rem;
+        background: var(--color-white-bg);
+    }
+
+    #right-part div {
+        gap: 0.2rem;
+        font-size: 0.3rem;
+    }
+
+    #right-part>div>p {
+        margin-bottom: 0.5rem;
+        font-size: 0.6rem;
+    }
+
+    #right-part>div>span {
+        line-height: 0.5rem;
+    }
+
+    .bottom-nav {
+        margin-top: 0.1rem;
+        height: 3rem;
+        padding: 0.8rem;
+        font-size: 0.5rem;
+    }
+
+    .bottom-nav div img {
+        width: 0.6rem;
+    }
+
+    #payment-method {
+        width: 10rem;
+    }
+
 }
 
 @media (min-width: 475px) {
     .navbar {
         display: none;
+    }
+
+    .navbar-mobile {
+        display: block;
+        width: 100vw;
+        height: 6rem;
+        background: var(--color-brand-blue);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        z-index: 3;
+        position: fixed;
+        top: 0;
     }
 
     #mobile-nav {
@@ -144,6 +246,19 @@
         align-items: center;
     }
 
+    #nav-row1 div img {
+        width: 1.1rem;
+        filter: invert();
+        margin-right: 0.6rem;
+    }
+
+    #nav-row1 div a {
+        text-decoration: none;
+        color: var(--color-white-bg);
+        font-size: 1rem;
+    }
+
+
     #nav-row2 {
         width: 30rem;
         position: sticky;
@@ -153,22 +268,8 @@
         padding: 0px 10px;
         border-radius: 2px;
         background: var(--color-white-bg);
-
     }
 
-    .navbar-mobile {
-        display: block;
-        width: 100%;
-        height: 5rem;
-        background: var(--color-brand-blue);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        z-index: 3;
-        position: fixed;
-        top: 0;
-    }
 
     .items-bar {
         display: none;
@@ -245,9 +346,85 @@
     #wrapper-content--fridge {
         width: 2.5rem;
     }
+
+    .info>p {
+        font-size: 0.9rem;
+        font-weight: 800;
+        margin: 1rem 0;
+    }
+
+    .info>span {
+        font-size: 0.7rem;
+        line-height: 0.9rem;
+    }
+
+    .bottom-section {
+        height: 15rem;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .bottom-section #left-part {
+        gap: 0.3rem;
+    }
+
+    #left-part div {
+        gap: 0.4rem;
+        font-size: 0.45rem;
+    }
+
+    #left-part>div>a {
+        line-height: 0.5rem;
+    }
+
+    #left-part>div>p {
+        margin-bottom: 0.5rem;
+        font-size: 0.6rem;
+    }
+
+    .bottom-section #right-part {
+        width: 10rem;
+        gap: 1rem;
+    }
+
+    .vert-line {
+        height: 5rem;
+        width: 0.1rem;
+        background: var(--color-white-bg);
+    }
+
+    #right-part div {
+        gap: 0.4rem;
+        font-size: 0.45rem;
+    }
+
+    #right-part>div>p {
+        margin-bottom: 0.5rem;
+        font-size: 0.6rem;
+    }
+
+    #right-part>div>span {
+        line-height: 0.6rem;
+    }
+
+    .bottom-nav {
+        margin-top: 0.1rem;
+        height: 3rem;
+        padding: 0.9rem;
+        font-size: 0.5rem;
+    }
+
+    .bottom-nav div img {
+        width: 0.60rem;
+    }
+
+    #payment-method {
+        width: 10rem;
+    }
+
 }
 
-@media (min-width: 768px) {
+@media (min-width: 812px) {
     .navbar-mobile {
         display: none;
     }
@@ -258,7 +435,7 @@
 
     .navbar {
         display: block;
-        width: 100%;
+        width: 100vw;
         height: 4rem;
         background: var(--color-brand-blue);
         display: flex;
@@ -331,6 +508,81 @@
     #wrapper-content--fridge {
         width: 3rem;
     }
+
+    .info>p {
+        font-size: 1rem;
+        font-weight: 800;
+        margin: 1rem 0;
+    }
+
+    .info>span {
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+
+    .bottom-section {
+        height: 15rem;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .bottom-section #left-part {
+        gap: 0.3rem;
+    }
+
+    #left-part div {
+        gap: 0.4rem;
+        font-size: 0.6rem;
+    }
+
+    #left-part>div>a {
+        line-height: 0.7rem;
+    }
+
+    #left-part>div>p {
+        margin-bottom: 0.6rem;
+        font-size: 0.8rem;
+    }
+
+    .bottom-section #right-part {
+        width: 10rem;
+        gap: 1rem;
+    }
+
+    .vert-line {
+        height: 5rem;
+        width: 0.1rem;
+        background: var(--color-white-bg);
+    }
+
+    #right-part div {
+        gap: 0.4rem;
+        font-size: 0.6rem;
+    }
+
+    #right-part>div>p {
+        margin-bottom: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    #right-part>div>span {
+        line-height: 0.8rem;
+    }
+
+    .bottom-nav {
+        margin-top: 0.1rem;
+        height: 3rem;
+        padding: 0.9rem;
+        font-size: 0.7rem;
+    }
+
+    .bottom-nav div img {
+        width: 0.8rem;
+    }
+
+    #payment-method {
+        width: 15rem;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -382,6 +634,81 @@
 
     #wrapper-content--fridge {
         width: 3rem;
+    }
+
+    .info>p {
+        font-size: 1rem;
+        font-weight: 800;
+        margin: 1rem 0;
+    }
+
+    .info>span {
+        font-size: 0.8rem;
+        line-height: 0.9rem;
+    }
+
+    .bottom-section {
+        height: 20rem;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .bottom-section #left-part {
+        gap: 1rem;
+    }
+
+    #left-part div {
+        gap: 0.4rem;
+        font-size: 0.7rem;
+    }
+
+    #left-part>div>a {
+        line-height: 0.9rem;
+    }
+
+    #left-part>div>p {
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .bottom-section #right-part {
+        width: 10rem;
+        gap: 1rem;
+    }
+
+    .vert-line {
+        height: 5rem;
+        width: 0.1rem;
+        background: var(--color-white-bg);
+    }
+
+    #right-part div {
+        gap: 0.4rem;
+        font-size: 0.7rem;
+    }
+
+    #right-part>div>p {
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    #right-part>div>span {
+        line-height: 1rem;
+    }
+
+    .bottom-nav {
+        margin-top: 0.1rem;
+        height: 4rem;
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .bottom-nav div img {
+        width: 0.9rem;
+    }
+
+    #payment-method {
+        width: 20rem;
     }
 }
 
@@ -439,12 +766,12 @@
 
 @media (min-width: 1536px) {
     .navbar {
-        height: 6rem;
+        height: 5rem;
         gap: 1.5rem;
     }
 
     #nav-logo {
-        height: 1.8rem;
+        height: 1.5rem;
     }
 
     .search-element {
@@ -453,11 +780,11 @@
     }
 
     #search {
-        font-size: 23px;
+        font-size: 1.2rem;
     }
 
     table img {
-        width: 1.8rem;
+        width: 1.6rem;
     }
 
     #login-button {
@@ -466,20 +793,17 @@
     }
 
     #login-button a {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     #nav-link,
     .nav-para {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
-    .material-symbols-outlined {
-        font-variation-settings:
-            'FILL' 1,
-            'wght' 500,
-            'GRAD' 0,
-            'opsz' 23
+    #nav-cart {
+        width: 1.2rem;
+        filter: invert();
     }
 
     .items-bar {
@@ -491,59 +815,62 @@
 
     .category {
         width: 6rem;
-        height: 11rem;
+        height: 10rem;
     }
 
     .category>img {
-        width: 6rem;
+        width: 5rem;
     }
 
     .category,
     .category>a,
     .category span p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .dp-menu {
-        width: 20rem;
+        width: 18rem;
     }
 
     .menu-list {
-        line-height: 2rem;
+        line-height: 1.5rem;
         padding: 0.8rem;
     }
 
     .menu-list a {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     #banner,
     .wrapper-items {
-        width: 90%;
+        width: 80%;
         height: 25rem;
     }
 
     #banner,
     .slideshow-container img {
-        height: 17rem;
+        height: 18rem;
     }
 
     .cover {
-        width: 18rem;
+        width: 30rem;
+    }
+    .cover img {
+        width: 30rem;
     }
 
     .cover span {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     .cover button {
         width: 11rem;
         height: 4rem;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .wrapper-content div {
-        width: 20rem;
+        width: 30rem;
     }
 
     .wrapper--content-txt {
@@ -551,11 +878,11 @@
     }
 
     .wrapper-content div img {
-        width: 9rem;
+        width: 10rem;
     }
 
     .wrapper--content-txt>span {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .wrapper--content-txt p {
@@ -563,51 +890,82 @@
     }
 
     #wrapper-content--fridge {
-        width: 5.4rem;
+        width: 6rem;
+    }
+
+
+    .info>p {
+        font-size: 1rem;
+        font-weight: 800;
+        margin: 1rem 0;
     }
 
     .info>span {
-        font-size: 17px;
-        line-height: 1.4rem;
+        font-size: 0.9rem;
+        line-height: 1.2rem;
     }
 
     .bottom-section {
-        height: 23rem;
-        padding: 2rem;
+        height: 20rem;
+        padding: 1rem;
+        gap: 2rem;
+    }
+
+    .bottom-section #left-part {
         gap: 2rem;
     }
 
     #left-part div {
-        font-size: 1.1rem;
+        gap: 0.6rem;
+        font-size: 0.8rem;
+    }
+
+    #left-part>div>a {
+        line-height: 1rem;
     }
 
     #left-part>div>p {
-        margin-bottom: 0.8rem;
-        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
     }
 
     .bottom-section #right-part {
+        width: 20rem;
         gap: 2rem;
     }
 
+    .vert-line {
+        height: 9rem;
+        width: 0.1rem;
+        background: var(--color-white-bg);
+    }
+
     #right-part div {
-        gap: 0.8rem;
-        font-size: 1.1rem;
+        gap: 0.6rem;
+        font-size: 0.8rem;
     }
 
     #right-part>div>p {
-        font-size: 1.2rem;
-        margin-bottom: 0.8rem;
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
     }
 
     #right-part>div>span {
-        line-height: 1.5em;
+        line-height: 1.2rem;
     }
 
     .bottom-nav {
         margin-top: 0.1rem;
-        height: 5rem;
+        height: 4rem;
         padding: 1rem;
-        font-size: 1.2rem;
+        font-size: 0.8rem;
+    }
+
+    .bottom-nav div img {
+        width: 0.9rem;
+    }
+
+    #payment-method {
+        width: 20rem;
     }
 }
