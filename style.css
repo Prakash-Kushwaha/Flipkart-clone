@@ -353,10 +353,9 @@ table img {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.4em;
+    gap: 1rem;
     margin-top: 5em;
     margin-bottom: 1.3em;
-    padding: 2rem;
     flex-wrap: wrap;
 }
 
@@ -369,7 +368,7 @@ table img {
 }
 
 .category>img {
-    width: 80px;
+    width: 4rem;
 }
 
 .category>a {
