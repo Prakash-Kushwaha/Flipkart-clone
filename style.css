@@ -270,6 +270,9 @@ body {
 }
 
 /*  -------- Login box Ends  --------  */
+.navbar-mobile {
+    display: none;
+}
 
 /* Nav Bar */
 .navbar {
@@ -290,8 +293,6 @@ body {
 }
 
 .search-element {
-    position: sticky;
-    top: 0;
     width: 25rem;
     height: 2.3rem;
     background: #fff;
@@ -359,6 +360,9 @@ table img {
   'opsz' 12
 }
 /* Items Bar */
+.items-bar--mobile {
+    display: none;
+}
 .items-bar {
     background: var(--color-white-bg);
     box-shadow: -1 3px #000;
@@ -530,9 +534,7 @@ table img {
     align-items: center;
 }
 
-.wrapper-content div img {
-    width: 10rem;
-}
+
 
 .wrapper--content-txt {
     display: flex;
@@ -649,7 +651,6 @@ table img {
     color: #8a8a8a;
     font-size: 11px;
     line-height: 1.2em;
-
 }
 
 .info a {

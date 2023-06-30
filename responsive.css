@@ -1,15 +1,613 @@
-
 /* ----------- Media Queries ---------- */
 @media (max-width: 475px) {
- 
+    .navbar {
+        display: none;
+    }
+
+    #mobile-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 1rem;
+    }
+
+    #nav-row1 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #nav-row2 {
+        width: 21rem;
+        position: sticky;
+        top: 0;
+        height: 2rem;
+        border: 2px solid #fff;
+        padding: 0px 10px;
+        border-radius: 2px;
+        background: var(--color-white-bg);
+
+    }
+
+    .navbar-mobile {
+        display: block;
+        width: 100%;
+        height: 5rem;
+        background: var(--color-brand-blue);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        z-index: 3;
+        position: fixed;
+        top: 0;
+    }
+
+    .items-bar {
+        display: none;
+    }
+
+    .items-bar--mobile {
+        background: var(--color-white-bg);
+        box-shadow: -1 3px #000;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        font-size: 0.6rem;
+        margin-top: 5rem;
+        margin-bottom: 1.3em;
+        box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+        overflow-x: scroll;
+    }
+
+    .category {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .category>img {
+        width: 3rem;
+    }
+
+    #banner,
+    .wrapper-items {
+        width: 98%;
+        height: 10rem;
+    }
+
+    #banner,
+    .slideshow-container img {
+        height: 8rem;
+    }
+
+    .cover {
+        width: 15rem;
+    }
+
+    .cover span {
+        font-size: 0.8rem;
+    }
+
+    .cover button {
+        width: 4rem;
+        height: 2rem;
+    }
+
+    .wrapper-content div {
+        width: 10rem;
+    }
+
+    .wrapper--content-txt {
+        padding: 0.2rem;
+    }
+
+    .wrapper-content div img {
+        width: 4rem;
+    }
+
+    .wrapper--content-txt>span {
+        font-size: 0.4rem;
+    }
+
+    .wrapper--content-txt p {
+        font-size: 0.6rem;
+    }
+
+    #wrapper-content--fridge {
+        width: 2.5rem;
+    }
 }
 
-@media (min-width: 475px) {}
+@media (min-width: 475px) {
+    .navbar {
+        display: none;
+    }
 
-@media (min-width: 768px) {}
+    #mobile-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.6rem;
+        padding: 1rem;
+    }
 
-@media (min-width: 1024px) {}
+    #nav-row1 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-@media (min-width: 1280px) {}
+    #nav-row2 {
+        width: 30rem;
+        position: sticky;
+        top: 0;
+        height: 2rem;
+        border: 2px solid #fff;
+        padding: 0px 10px;
+        border-radius: 2px;
+        background: var(--color-white-bg);
 
-@media (min-width: 1536px) {}
+    }
+
+    .navbar-mobile {
+        display: block;
+        width: 100%;
+        height: 5rem;
+        background: var(--color-brand-blue);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        z-index: 3;
+        position: fixed;
+        top: 0;
+    }
+
+    .items-bar {
+        display: none;
+    }
+
+    .items-bar--mobile {
+        background: var(--color-white-bg);
+        box-shadow: -1 3px #000;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        font-size: 0.6rem;
+        margin-top: 5rem;
+        margin-bottom: 1.3em;
+        box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+        overflow-x: scroll;
+    }
+
+    .category {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .category>img {
+        width: 3rem;
+    }
+
+    #banner,
+    .wrapper-items {
+        width: 98%;
+        height: 10rem;
+    }
+
+    #banner,
+    .slideshow-container img {
+        height: 8rem;
+    }
+
+    .cover {
+        width: 15rem;
+    }
+
+    .cover span {
+        font-size: 0.8rem;
+    }
+
+    .cover button {
+        width: 4rem;
+        height: 2rem;
+    }
+
+    .wrapper-content div {
+        width: 10rem;
+    }
+
+    .wrapper--content-txt {
+        padding: 0.2rem;
+    }
+
+    .wrapper-content div img {
+        width: 4rem;
+    }
+
+    .wrapper--content-txt>span {
+        font-size: 0.4rem;
+    }
+
+    .wrapper--content-txt p {
+        font-size: 0.6rem;
+    }
+
+    #wrapper-content--fridge {
+        width: 2.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-mobile {
+        display: none;
+    }
+
+    .items-bar--mobile {
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+        width: 100%;
+        height: 4rem;
+        background: var(--color-brand-blue);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        position: fixed;
+        top: 0;
+        z-index: 3;
+    }
+
+    .items-bar {
+        display: block;
+        background: var(--color-white-bg);
+        box-shadow: -1 3px #000;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 4.6em;
+        margin-bottom: 1.3em;
+        box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+    }
+
+    #banner,
+    .wrapper-items {
+        width: 98%;
+        height: 15rem;
+    }
+
+    #banner,
+    .slideshow-container img {
+        height: 10rem;
+    }
+
+    .cover {
+        width: 13rem;
+    }
+
+    .cover span {
+        font-size: 1.2rem;
+    }
+
+    .cover button {
+        width: 6rem;
+        height: 2rem;
+    }
+
+    .wrapper-content div {
+        width: 12rem;
+    }
+
+    .wrapper--content-txt {
+        padding: 0.8rem;
+    }
+
+    .wrapper-content div img {
+        width: 6rem;
+    }
+
+    .wrapper--content-txt>span {
+        font-size: 0.7rem;
+    }
+
+    .wrapper--content-txt p {
+        font-size: 0.9rem;
+    }
+
+    #wrapper-content--fridge {
+        width: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    #banner,
+    .wrapper-items {
+        width: 90%;
+        height: 17rem;
+    }
+
+    #banner,
+    .slideshow-container img {
+        height: 12rem;
+    }
+
+    .cover {
+        width: 14rem;
+    }
+
+    .cover span {
+        font-size: 1.3rem;
+    }
+
+    .cover button {
+        width: 7rem;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+
+    .wrapper-content div {
+        width: 14rem;
+    }
+
+    .wrapper--content-txt {
+        padding: 0.9rem;
+    }
+
+    .wrapper-content div img {
+        width: 7rem;
+    }
+
+    .wrapper--content-txt>span {
+        font-size: 0.8rem;
+    }
+
+    .wrapper--content-txt p {
+        font-size: 1rem;
+    }
+
+    #wrapper-content--fridge {
+        width: 3rem;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    #banner,
+    .wrapper-items {
+        width: 90%;
+        height: 20rem;
+    }
+
+    #banner,
+    .slideshow-container img {
+        height: 15rem;
+    }
+
+    .cover {
+        width: 15rem;
+    }
+
+    .cover span {
+        font-size: 1.6rem;
+    }
+
+    .cover button {
+        width: 8rem;
+        height: 3rem;
+        font-size: 1.2rem;
+    }
+
+    .wrapper-content div {
+        width: 16rem;
+    }
+
+    .wrapper--content-txt {
+        padding: 1.1rem;
+    }
+
+    .wrapper-content div img {
+        width: 8rem;
+    }
+
+    .wrapper--content-txt>span {
+        font-size: 1rem;
+    }
+
+    .wrapper--content-txt p {
+        font-size: 1.2rem;
+    }
+
+    #wrapper-content--fridge {
+        width: 4.3rem;
+    }
+}
+
+@media (min-width: 1536px) {
+    .navbar {
+        height: 6rem;
+        gap: 1.5rem;
+    }
+
+    #nav-logo {
+        height: 1.8rem;
+    }
+
+    .search-element {
+        width: 30rem;
+        height: 3rem;
+    }
+
+    #search {
+        font-size: 23px;
+    }
+
+    table img {
+        width: 1.8rem;
+    }
+
+    #login-button {
+        height: 3em;
+        width: 7em;
+    }
+
+    #login-button a {
+        font-size: 1.4rem;
+    }
+
+    #nav-link,
+    .nav-para {
+        font-size: 1.4rem;
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings:
+            'FILL' 1,
+            'wght' 500,
+            'GRAD' 0,
+            'opsz' 23
+    }
+
+    .items-bar {
+        padding: 1.4rem;
+        gap: 2rem;
+        margin-top: 6em;
+        margin-bottom: 2rem;
+    }
+
+    .category {
+        width: 6rem;
+        height: 11rem;
+    }
+
+    .category>img {
+        width: 6rem;
+    }
+
+    .category,
+    .category>a,
+    .category span p {
+        font-size: 1.2rem;
+    }
+
+    .dp-menu {
+        width: 20rem;
+    }
+
+    .menu-list {
+        line-height: 2rem;
+        padding: 0.8rem;
+    }
+
+    .menu-list a {
+        font-size: 1.2rem;
+    }
+
+    #banner,
+    .wrapper-items {
+        width: 90%;
+        height: 25rem;
+    }
+
+    #banner,
+    .slideshow-container img {
+        height: 17rem;
+    }
+
+    .cover {
+        width: 18rem;
+    }
+
+    .cover span {
+        font-size: 2rem;
+    }
+
+    .cover button {
+        width: 11rem;
+        height: 4rem;
+        font-size: 1.4rem;
+    }
+
+    .wrapper-content div {
+        width: 20rem;
+    }
+
+    .wrapper--content-txt {
+        padding: 1.5rem;
+    }
+
+    .wrapper-content div img {
+        width: 9rem;
+    }
+
+    .wrapper--content-txt>span {
+        font-size: 1.3rem;
+    }
+
+    .wrapper--content-txt p {
+        font-size: 1.2rem;
+    }
+
+    #wrapper-content--fridge {
+        width: 5.4rem;
+    }
+
+    .info>span {
+        font-size: 17px;
+        line-height: 1.4rem;
+    }
+
+    .bottom-section {
+        height: 23rem;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    #left-part div {
+        font-size: 1.1rem;
+    }
+
+    #left-part>div>p {
+        margin-bottom: 0.8rem;
+        font-size: 1.2rem;
+    }
+
+    .bottom-section #right-part {
+        gap: 2rem;
+    }
+
+    #right-part div {
+        gap: 0.8rem;
+        font-size: 1.1rem;
+    }
+
+    #right-part>div>p {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    #right-part>div>span {
+        line-height: 1.5em;
+    }
+
+    .bottom-nav {
+        margin-top: 0.1rem;
+        height: 5rem;
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+}
