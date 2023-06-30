@@ -145,7 +145,7 @@ body {
     position: absolute;
     z-index: 5;
     background: #0009;
-    pointer-events:visible;
+    pointer-events: visible;
 }
 
 .login-box {
@@ -154,7 +154,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .login-window {
@@ -195,6 +195,7 @@ body {
 .sec-1 img {
     width: 200px;
 }
+
 .sec-2 {
     height: 100%;
     background: var(--color-white-bg);
@@ -259,6 +260,7 @@ body {
     font-weight: 800;
     color: var(--color-brand-blue);
 }
+
 #login-close {
     width: 2em;
     position: absolute;
@@ -453,19 +455,94 @@ table img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.6em;
+    gap: 1rem;
     background: var(--color-page-bg);
 }
 
 #banner,
-.row2,
-.row3,
-.row4,
-.row5 {
-    width: 98%;
-    height: 20em;
-    background: var(--color-light-blue2);
+.wrapper-items {
+    width: 85%;
+    height: 23rem;
+    background: var(--color-white-bg);
     position: relative;
+}
+
+.wrapper-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cover {
+    height: inherit;
+    display: flex;
+    width: 17rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.cover span {
+    font-size: var(--font-size-20);
+    font-weight: var(--font-medium);
+    padding: 0.6rem;
+}
+
+.cover button {
+    outline: none;
+    border: none;
+    width: 8rem;
+    height: 3rem;
+    color: var(--color-white-bg);
+    background: var(--color-brand-blue);
+    cursor: pointer;
+}
+
+
+.wrapper-content {
+    height: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    overflow-x: scroll;
+}
+
+.wrapper-content div {
+    height: inherit;
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.wrapper-content div img {
+    width: 10rem;
+}
+
+.wrapper--content-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 1rem;
+}
+
+.wrapper--content-txt>span {
+    font-size: var(--font-size-16);
+    font-weight: var(--font-medium);
+}
+
+.wrapper--content-txt p {
+    color: var(--color-green-grade0);
+    font-size: var(--font-size-16);
+}
+
+.wrapper--content-txt p+span {
+    color: #838383;
 }
 
 #banner {
@@ -476,9 +553,9 @@ table img {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 100%;
-  position: relative;
-  margin: auto;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
 }
 
 .slideshow-container img {
@@ -488,49 +565,55 @@ table img {
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+    display: none;
 }
 
 /* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: #000;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  background: #fff;
-  box-shadow: 1px 2px 6px 0 #000;
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background: #fff;
+    box-shadow: 1px 2px 6px 0 #000;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 /* Fading animation */
 .fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 /* ---------- info ----------- */
 
 .info {
     background: var(--color-white-bg);
-    margin-top: 1rem;
+    margin-top: 2rem;
     padding: 1rem;
 }
 
