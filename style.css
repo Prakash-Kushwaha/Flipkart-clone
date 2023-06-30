@@ -351,7 +351,13 @@ table img {
 .nav-para {
     cursor: pointer;
 }
-
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 12
+}
 /* Items Bar */
 .items-bar {
     background: var(--color-white-bg);
@@ -361,9 +367,8 @@ table img {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin-top: 5em;
+    margin-top: 4.6em;
     margin-bottom: 1.3em;
-    flex-wrap: wrap;
     box-shadow: 0 0 11px rgba(33,33,33,.2);
 }
 
