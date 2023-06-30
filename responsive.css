@@ -1,5 +1,62 @@
 /* ----------- Media Queries ---------- */
 @media (max-width: 475px) {
+    .login-window {
+        width: 10rem;
+        height: 20rem;
+    }
+
+    #title-login {
+        font-size: 1rem;
+        font-weight: 800;
+    }
+
+    .txt-login {
+        font-size: 0.6rem;
+        line-height: 0.8rem;
+        width: 4rem;
+    }
+    #login--left-pt {
+        padding: 0.8rem;
+    }
+
+    #login--left-pt img {
+        width: 6rem;
+    }
+
+    #login--right-pt {
+        padding: 0.8rem;
+    }
+    #login--right-pt form {
+        gap: 0.6rem;
+    }
+
+    #login--right-pt form label {
+        font-size: 0.7rem;
+    }
+    #login--right-pt form div {
+        font-size: 0.4rem;
+    }
+
+    #login-terms {
+        width: 8rem;
+    }
+    .otp-btn {
+        width: 8rem;
+        height: 1.2rem;
+        font-size: 0.6rem;
+    }
+
+    #login--right-pt form+span a {
+        font-size: 0.6rem;
+    }
+
+    #login-close {
+        width: 1rem;
+        right: 0.3em;
+        top: 0.3em;
+    }
+
+
     .navbar {
         display: none;
     }
@@ -71,7 +128,7 @@
         align-items: center;
         gap: 1rem;
         font-size: 0.6rem;
-        margin-top: 5rem;
+        margin-top: 4.99rem;
         margin-bottom: 1.3em;
         box-shadow: 0 0 11px rgba(33, 33, 33, .2);
         overflow-x: scroll;
@@ -166,7 +223,7 @@
 
     #left-part>div>p {
         margin-bottom: 0.5rem;
-        font-size: 0.6rem;
+        font-size: 0.4rem;
     }
 
     .bottom-section #right-part {
@@ -187,7 +244,7 @@
 
     #right-part>div>p {
         margin-bottom: 0.5rem;
-        font-size: 0.6rem;
+        font-size: 0.4rem;
     }
 
     #right-part>div>span {
@@ -212,6 +269,64 @@
 }
 
 @media (min-width: 475px) {
+    .login-window {
+        width: 10rem;
+        height: 20rem;
+    }
+
+    #title-login {
+        font-size: 1rem;
+        font-weight: 800;
+    }
+
+    .txt-login {
+        font-size: 0.6rem;
+        line-height: 0.8rem;
+        width: 4rem;
+    }
+    #login--left-pt {
+        padding: 0.8rem;
+    }
+
+    #login--left-pt img {
+        width: 6rem;
+    }
+
+    #login--right-pt {
+        padding: 0.8rem;
+    }
+    #login--right-pt form {
+        gap: 0.6rem;
+    }
+
+    #login--right-pt form label {
+        font-size: 0.7rem;
+    }
+    #login--right-pt form div {
+        font-size: 0.4rem;
+    }
+
+    #login-terms {
+        width: 8rem;
+    }
+    .otp-btn {
+        width: 8rem;
+        height: 1.2rem;
+        font-size: 0.6rem;
+    }
+
+    #login--right-pt form+span a {
+        font-size: 0.6rem;
+    }
+
+    #login-close {
+        width: 1rem;
+        right: 0.3em;
+        top: 0.3em;
+    }
+
+
+
     .navbar {
         display: none;
     }
@@ -425,6 +540,63 @@
 }
 
 @media (min-width: 812px) {
+    .login-window {
+        width: 30rem;
+        height: 25rem;
+    }
+
+    #title-login {
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+
+    .txt-login {
+        font-size: 0.8rem;
+        line-height: 1rem;
+        width: 5rem;
+    }
+    #login--left-pt {
+        padding: 1rem;
+    }
+
+    #login--left-pt img {
+        width: 8rem;
+    }
+
+    #login--right-pt {
+        padding: 1rem;
+    }
+    #login--right-pt form {
+        gap: 1rem;
+    }
+
+    #login--right-pt form label {
+        font-size: 0.9rem;
+    }
+    #login--right-pt form div {
+        font-size: 0.8rem;
+    }
+
+    #login-terms {
+        width: 12rem;
+    }
+    .otp-btn {
+        width: 12rem;
+        height: 2rem;
+        font-size: 0.8rem;
+    }
+
+    #login--right-pt form+span a {
+        font-size: 0.9rem;
+    }
+
+    #login-close {
+        width: 1.5rem;
+        right: 0.3em;
+        top: 0.3em;
+    }
+
+
     .navbar-mobile {
         display: none;
     }
@@ -586,6 +758,136 @@
 }
 
 @media (min-width: 1024px) {
+    #login {
+        display: none;
+        position: absolute;
+        z-index: 5;
+        background: #0009;
+        pointer-events: visible;
+    }
+    
+    .login-box {
+        height: 100svh;
+        width: 100svw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .login-window {
+        width: 750px;
+        height: 482px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+    
+    }
+    
+    #login--left-pt {
+        height: 100%;
+        background: var(--color-brand-blue);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 4px 0 0 4px;
+        flex-grow: 1;
+    }
+    
+    #title-login {
+        color: var(--color-white-bg);
+        font-size: 23px;
+        font-weight: 800;
+    }
+    
+    .txt-login {
+        color: var(--color-white-bg);
+        font-size: 18px;
+        line-height: 1.5em;
+        width: 13rem;
+        text-align: left;
+    }
+    
+    #login--left-pt img {
+        width: 200px;
+    }
+    
+    #login--right-pt {
+        height: 100%;
+        background: var(--color-white-bg);
+        border-radius: 0 4px 4px 0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        flex-grow: 2;
+    }
+    
+    #login--right-pt form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        gap: 3em;
+    }
+    
+    #login--right-pt form label {
+        font-size: 16px;
+        color: #878787;
+    }
+    
+    #login--right-pt form input {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #878787;
+    }
+    
+    
+    #login--right-pt form div {
+        color: #878787;
+        font-size: 12px;
+    }
+    
+    #login-terms {
+        width: 20rem;
+    }
+    
+    #login--right-pt form a {
+        text-decoration: none;
+        color: var(--color-brand-blue);
+    }
+    
+    .otp-btn {
+        width: 20rem;
+        height: 3rem;
+        outline: none;
+        border: none;
+        font-size: 16px;
+        font-weight: 800;
+        color: var(--color-white-bg);
+        background: var(--color-brand-orange);
+        cursor: pointer;
+    }
+    
+    #login--right-pt form+span a {
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 800;
+        color: var(--color-brand-blue);
+    }
+    
+    #login-close {
+        width: 2em;
+        position: absolute;
+        right: 0.3em;
+        top: 0.3em;
+        cursor: pointer;
+    }
+    
+
 
     #banner,
     .wrapper-items {
@@ -855,6 +1157,7 @@
     .cover {
         width: 30rem;
     }
+
     .cover img {
         width: 30rem;
     }
