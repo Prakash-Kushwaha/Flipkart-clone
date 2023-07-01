@@ -527,11 +527,12 @@
         margin-top: 0.1rem;
         height: 3rem;
         padding: 0.9rem;
-        font-size: 0.4rem;
+        font-size: 0.35rem;
+        gap: 1rem;
     }
 
     .bottom-nav div img {
-        width: 0.55rem;
+        width: 0.5rem;
     }
 
     #payment-method {
