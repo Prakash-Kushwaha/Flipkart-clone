@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store</title>
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="../stylesheets/responsive.css">
+    <link rel="stylesheet" href="../stylesheets/grocery.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <a href="#"><img src="../assets/grocery/grocery-logo.svg" id="nav-logo"></a>
+                <div class="search-element">
+                    <table class="search-bar">
+                        <tr>
+                            <td>
+                                <input type="text" id="search" placeholder="Search grocery products">
+                            </td>
+                            <td><a href="#"><img src="../assets/search.png"></a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="login-button" onclick="openLogin()"><a href="#">Login</a></div>
+                <a href="../pages/more.html" class="nav-para">More</a>
+                <a href="../pages/cart.html" class="nav-para"><img id="nav-cart" src="../assets/cart.png"
+                        alt="">Cart</a>
+            </nav>
+
+            <nav class="navbar-mobile">
+                <div id="mobile-nav">
+                    <div id="nav-row1">
+                        <a href="#"><img src="../assets/grocery/grocery-logo.svg" id="nav-logo"></a>
+                        <div>
+                            <a href="../pages/cart.html"><img src="../assets/cart.png" alt=""></a>
+                            <a href="#" onclick="openLogin()">Login</a>
+                        </div>
+                    </div>
+                    <div id="nav-row2">
+                        <table class="search-bar">
+                            <tr>
+                                <td><a href="#"><img src="../assets/search.png"></a></td>
+                                <td>
+                                    <input type="text" id="search" placeholder="Search for products, brands and more">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </nav>
+
+            <nav class="items-bar--mobile">
+                <section class="category grocery"><a href="#"><img src="../assets/grocery/staples.webp"
+                            alt="">Staples</a>
+                </section>
+                <section class="category mobiles"><a href="#"><img src="../assets/grocery/snacks.webp" alt="">Snacks &
+                        Beverages</a>
+                </section>
+                <section class="category fashion">
+                    <a href="#">
+                        <img src="../assets/grocery/package-food.webp" alt="">
+                        Packaged Food</a>
+                </section>
+                <section class="category electronics"><a href="#"><img src="../assets/grocery/baby-care.webp" alt="">
+                        Personal & Baby Care</a>
+                </section>
+                <section class="category home"><a href="#"><img src="../assets/grocery/household.webp" alt="">
+                        <div>Household Care</div>
+                    </a>
+                </section>
+                <section class="category appliances"><a href="#"><img src="../assets/grocery/dairy-eggs.webp"
+                            alt="">Dairy & Eggs</a>
+                </section>
+                <section class="category offers"><a href="#"><img src="../assets/grocery/home-kitchen.webp" alt="">
+                        <div>Home & Kitchen</div>
+                    </a>
+                </section>
+                <section class="category toys"><a href="#"><img src="../assets/grocery/fruits-veg.webp" alt="">
+                        Fruits & Vegetables</a>
+                </section>
+
+            </nav>
+
+            <nav class="items-bar">
+                <section class="category grocery"><img src="../assets/grocery/staples.webp" alt="">
+                    <span>
+                        <p>Staples</p>
+                        <img class="nav-arrow" src="../assets/arrow-down.png">
+                    </span>
+                    <div class="dp-menu">
+                        <div class="menu-list">
+                            <a href="#">Dals & Pulses</a>
+                            <a href="#">Ghee & Oil</a>
+                            <a href="#">Atta & Flours</a>
+                            <a href="#">Masalas & Spices</a>
+                            <a href="#">Rice & Rice Products</a>
+                            <a href="#">Dry Fruits, Nuts & Seeds</a>
+                            <a href="#">Sugar, Jaggery & Salt</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="category mobiles"><img src="../assets/grocery/snacks.webp" alt="">
+                    <span>
+                        <p>Snacks & Beverages</p>
+                        <img class="nav-arrow" src="../assets/arrow-down.png">
+                    </span>
+                    <div class="dp-menu">
+                        <div class="menu-list">
+                            <a href="#">Biscuits</a>
+                            <a href="#">Chips, Namkeen & Snacks</a>
+                            <a href="#">Tea</a>
+                            <a href="#">Coffee</a>
+                            <a href="#">Juices</a>
+                            <a href="#">Health Drink Mix</a>
+                            <a href="#">Soft Drinks</a>
+                            <a href="#">Intant Drink Mixes, Squash & Syrups</a>
+                            <a href="#">Water</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="category fashion">
+                    <img src="../assets/grocery/package-food.webp" alt="">
+                    <span>
+                        <p>Packaged Food</p>
+                        <img class="nav-arrow" src="../assets/arrow-down.png">
+                    </span>
+                    <div class="dp-menu">
+                        <div class="menu-list">
+                            <a href="#">Breakfast Cereals</a>
+                            <a href="#">Noodles & Pasta</a>
+                            <a href="#">Ketchups & Spreads</a>
+                            <a href="#">Chocolates & Sweets</a>
+                            <a href="#">Jams & Honey</a>
+                            <a href="#">Pickles & Chutney</a>
+                            <a href="#">Ready To Cook</a>
+                            <a href="#">Cooking Sauces & Vinegar</a>
+                            <a href="#">Baking</a>
+                        </div>
+
+                    </div>
+                </section>
+                <section class="category electronics"><img src="../assets/grocery/baby-care.webp" alt="">
+                    <span>
+                        <p>Personal & Baby Care</p>
+                        <img class="nav-arrow" src="../assets/arrow-down.png">
+                    </span>
+                    <div class="dp-menu">
+                        <div class="menu-list">
+                            <a href="#">Soaps & Body Wash</a>
+                            <a href="#">Hair Care</a>
+                            <a href="#">Oral Care</a>
+                            <a href="#">Deos, Perfumes & Talc</a>
+                            <a href="#">Creams, Lotions, Skin Care</a>
+                            <a href="#">Kajal & Makeup</a>
+                            <a href="#">Sanitary Needs</a>
+                            <a href="#">Wellness & Common Pharma</a>
+                            <a href="#">Shaving Needs</a>
+                            <a href="#">Diapers & Wipes</a>
+                            <a href="#">Baby Foods</a>
+                            <a href="#">Baby Bath & Skin Care</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="category home"><img src="../assets/grocery/household.webp" alt="">
+                    <span>
+                        <p>Household Care</p>
+                        <img class="nav-arrow" src="../assets/arrow-down.png">
+                    </span>
+                    <div class="dp-menu">
+                        <div class="menu-list">
+                            <a href="#">Detergents & Laundry</a>
+                            <a href="#">Utensils Cleaner</a>
+                            <a href="#">Floor & Other Cleaners</a>
+                            <a href="#">Repellants & Fresheners</a>
+                            <a href="#">Paper & Disposables</a>
+                            <a href="#">Basic Electricals</a>
+                            <a href="#">Pooja Needs</a>
+                            <a href="#">Pet Food</a>
+                            <a href="#">Shoe Care</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="category appliances"><img src="../assets/grocery/dairy-eggs.webp" alt="">
+                    <span>
+                        <p>Dairy & Eggs</p>
+                        <img class="nav-arrow" src="../assets/arrow-down.png">
+                    </span>
+                    <div class="dp-menu">
+                        <div class="menu-list">
+                            <a href="#">Dairy</a>
+                            <a href="#">Eggs</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="category offers"><img src="../assets/grocery/home-kitchen.webp" alt="">
+                    <span>
+                        <p>Home & Kitchen</p>
+                        <img class="nav-arrow" src="../assets/arrow-down.png">
+                    </span>
+                    <div class="dp-menu">
+                        <div class="menu-list">
+                            <a href="#">Storage & Containers</a>
+                            <a href="#">Kitchen Tools</a>
+                            <a href="#">Cookware & Non Stick</a>
+                            <a href="#">Dining & Cutlery</a>
+                            <a href="#">Stationery & Household Esentials</a>
+                        </div>
+
+                    </div>
+                </section>
+                <section class="category toys"><img src="../assets/grocery/fruits-veg.webp" alt="">
+                    <span>
+                        <p>Fruits & Vegetables</p>
+                        <img class="nav-arrow" src="../assets/arrow-down.png">
+                    </span>
+                    <div class="dp-menu">
+                        <div class="menu-list">
+                            <a href="#">Beauty & Personal Care</a>
+                            <a href="#">Men's Grooming</a>
+                            <a href="#">Food & Drinks</a>
+                            <a href="#">Nutrition & Health Care</a>
+                            <a href="#">Baby Care</a>
+                            <a href="#">Toys & School Supplies</a>
+                            <a href="#">Sports & Fitness</a>
+                            <a href="#">Books</a>
+                            <a href="#">Music</a>
+                            <a href="#">Stationary & Office Supplies</a>
+                            <a href="#">Auto Accessories</a>
+                            <a href="#">Safety & Hygiene Essentials</a>
+                        </div>
+                    </div>
+                </section>
+
+            </nav>
+        </header>
+        <script defer src="../main.js"></script>
+
+    </div>
+</body>
+
+</html>

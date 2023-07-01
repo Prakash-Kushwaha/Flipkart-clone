@@ -1,0 +1,22 @@
+:root {
+    --color-supermart-green: #26a541;
+
+}
+
+
+.navbar {
+    background: var(--color-supermart-green);
+}
+
+.grocery:hover .dp-menu,
+.mobiles:hover .dp-menu,
+.fashion:hover .dp-menu,
+.electronics:hover .dp-menu,
+.home:hover .dp-menu,
+.appliances:hover .dp-menu,
+.offers:hover .dp-menu,
+.home:hover .dp-menu,
+.toys:hover .dp-menu {
+    display: block;
+    color: var(--color-brand-bbd)
+}
