@@ -115,7 +115,6 @@ footer {
     width: 100vw;
     position: fixed;
     bottom: 0;
-    height: 20rem;
     display: flex;
     justify-content: space-evenly;
     align-items: top;
@@ -156,10 +155,6 @@ footer span+span a {
         width: 8rem;
         height: 2rem;
     }
-
-    footer {
-        height: 14rem;
-    }
 }
 
 @media (min-width: 485px) {
@@ -181,10 +176,6 @@ footer span+span a {
         width: 8rem;
         height: 2rem;
     }
-
-    footer {
-        height: 14rem;
-    }
 }
 
 @media (min-width: 812px) {
@@ -204,10 +195,6 @@ footer span+span a {
     .content button {
         width: 8rem;
         height: 2rem;
-    }
-
-    footer {
-        height: 18rem;
     }
 }
 
@@ -230,9 +217,5 @@ footer span+span a {
     .content button {
         width:11rem;
         height: 2.5rem;
-    }
-
-    footer {
-        height: 20rem;
     }
 }
