@@ -15,6 +15,7 @@
         line-height: 0.8rem;
         width: 4rem;
     }
+
     #login--left-pt {
         padding: 0.8rem;
     }
@@ -26,6 +27,7 @@
     #login--right-pt {
         padding: 0.8rem;
     }
+
     #login--right-pt form {
         gap: 0.6rem;
     }
@@ -33,6 +35,7 @@
     #login--right-pt form label {
         font-size: 0.7rem;
     }
+
     #login--right-pt form div {
         font-size: 0.4rem;
     }
@@ -40,6 +43,7 @@
     #login-terms {
         width: 8rem;
     }
+
     .otp-btn {
         width: 8rem;
         height: 1.2rem;
@@ -139,7 +143,7 @@
         height: 5rem;
     }
 
-    .category>img {
+    .category>a img {
         width: 3rem;
     }
 
@@ -285,6 +289,7 @@
         line-height: 0.8rem;
         width: 4rem;
     }
+
     #login--left-pt {
         padding: 0.8rem;
     }
@@ -296,6 +301,7 @@
     #login--right-pt {
         padding: 0.8rem;
     }
+
     #login--right-pt form {
         gap: 0.6rem;
     }
@@ -303,6 +309,7 @@
     #login--right-pt form label {
         font-size: 0.7rem;
     }
+
     #login--right-pt form div {
         font-size: 0.4rem;
     }
@@ -310,6 +317,7 @@
     #login-terms {
         width: 8rem;
     }
+
     .otp-btn {
         width: 8rem;
         height: 1.2rem;
@@ -411,7 +419,7 @@
         height: 5rem;
     }
 
-    .category>img {
+    .category>a img {
         width: 3rem;
     }
 
@@ -557,6 +565,7 @@
         line-height: 1rem;
         width: 5rem;
     }
+
     #login--left-pt {
         padding: 1rem;
     }
@@ -568,6 +577,7 @@
     #login--right-pt {
         padding: 1rem;
     }
+
     #login--right-pt form {
         gap: 1rem;
     }
@@ -575,6 +585,7 @@
     #login--right-pt form label {
         font-size: 0.9rem;
     }
+
     #login--right-pt form div {
         font-size: 0.8rem;
     }
@@ -582,6 +593,7 @@
     #login-terms {
         width: 12rem;
     }
+
     .otp-btn {
         width: 12rem;
         height: 2rem;
@@ -621,6 +633,10 @@
         z-index: 3;
     }
 
+    .nav-para {
+        text-decoration: none;
+    }
+
     .items-bar {
         display: block;
         background: var(--color-white-bg);
@@ -633,6 +649,16 @@
         margin-top: 4.6em;
         margin-bottom: 1.3em;
         box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+    }
+
+    .category {
+        width: 5rem;
+        height: 6rem;
+    }
+
+    .category>img,
+    .category>a img {
+        width: 4rem;
     }
 
     #banner,
@@ -767,16 +793,16 @@
         background: #0009;
         pointer-events: visible;
     }
-    
+
     .login-box {
         height: 100svh;
         width: 100svw;
         display: flex;
         justify-content: center;
         align-items: center;
-    
+
     }
-    
+
     .login-window {
         width: 750px;
         height: 482px;
@@ -784,9 +810,9 @@
         justify-content: center;
         align-items: center;
         box-shadow: 0 0 11px rgba(33, 33, 33, .2);
-    
+
     }
-    
+
     #login--left-pt {
         height: 100%;
         background: var(--color-brand-blue);
@@ -797,13 +823,13 @@
         border-radius: 4px 0 0 4px;
         flex-grow: 1;
     }
-    
+
     #title-login {
         color: var(--color-white-bg);
         font-size: 23px;
         font-weight: 800;
     }
-    
+
     .txt-login {
         color: var(--color-white-bg);
         font-size: 18px;
@@ -811,11 +837,11 @@
         width: 13rem;
         text-align: left;
     }
-    
+
     #login--left-pt img {
         width: 200px;
     }
-    
+
     #login--right-pt {
         height: 100%;
         background: var(--color-white-bg);
@@ -827,7 +853,7 @@
         align-items: center;
         flex-grow: 2;
     }
-    
+
     #login--right-pt form {
         display: flex;
         flex-direction: column;
@@ -835,33 +861,33 @@
         align-items: left;
         gap: 3em;
     }
-    
+
     #login--right-pt form label {
         font-size: 16px;
         color: #878787;
     }
-    
+
     #login--right-pt form input {
         outline: none;
         border: none;
         border-bottom: 1px solid #878787;
     }
-    
-    
+
+
     #login--right-pt form div {
         color: #878787;
         font-size: 12px;
     }
-    
+
     #login-terms {
         width: 20rem;
     }
-    
+
     #login--right-pt form a {
         text-decoration: none;
         color: var(--color-brand-blue);
     }
-    
+
     .otp-btn {
         width: 20rem;
         height: 3rem;
@@ -873,14 +899,14 @@
         background: var(--color-brand-orange);
         cursor: pointer;
     }
-    
+
     #login--right-pt form+span a {
         text-decoration: none;
         font-size: 15px;
         font-weight: 800;
         color: var(--color-brand-blue);
     }
-    
+
     #login-close {
         width: 2em;
         position: absolute;
@@ -888,7 +914,7 @@
         top: 0.3em;
         cursor: pointer;
     }
-    
+
 
 
     #banner,
@@ -1102,6 +1128,7 @@
 
     #nav-link,
     .nav-para {
+        text-decoration: none;
         font-size: 1rem;
     }
 
@@ -1119,11 +1146,12 @@
 
     .category {
         width: 6rem;
-        height: 8rem;
+        height: 6.4rem;
     }
 
-    .category>img {
-        width: 5rem;
+    .category>img,
+    .category>a img {
+        width: 4rem;
     }
 
     .category,

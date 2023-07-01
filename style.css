@@ -395,7 +395,7 @@ table img {
     cursor: pointer;
 }
 
-.category>img {
+.category>img, .category > a img {
     width: 4rem;
 }
 
