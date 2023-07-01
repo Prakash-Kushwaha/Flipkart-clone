@@ -39,10 +39,34 @@
     .navbar-mobile {
         background: var(--color-supermart-green);
     }
+
+    #login--left-pt {
+        background: var(--color-supermart-green);
+    }
+
+    #login--right-pt form a {
+        color: var(--color-supermart-green);
+    }
+
+    #login--right-pt form+span a {
+        color: var(--color-supermart-green);
+    }
 }
 
 @media (min-width: 485px) {
     .navbar-mobile {
         background: var(--color-supermart-green);
+    }
+
+    #login--left-pt {
+        background: var(--color-supermart-green);
+    }
+
+    #login--right-pt form a {
+        color: var(--color-supermart-green);
+    }
+
+    #login--right-pt form+span a {
+        color: var(--color-supermart-green);
     }
 }
