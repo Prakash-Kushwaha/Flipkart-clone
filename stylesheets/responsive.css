@@ -119,6 +119,12 @@
 
     }
 
+    #nav-link,
+    .nav-para,
+    #login-button {
+        font-weight: 700;
+    }
+
     .items-bar {
         display: none;
     }
@@ -394,6 +400,11 @@
         background: var(--color-white-bg);
     }
 
+    #nav-link,
+    .nav-para,
+    #login-button {
+        font-weight: 700;
+    }
 
     .items-bar {
         display: none;
@@ -635,6 +646,12 @@
 
     .nav-para {
         text-decoration: none;
+    }
+
+    #nav-link,
+    .nav-para,
+    #login-button {
+        font-weight: 700;
     }
 
     .items-bar {
@@ -915,7 +932,11 @@
         cursor: pointer;
     }
 
-
+    #nav-link,
+    .nav-para,
+    #login-button {
+        font-weight: 700;
+    }
 
     #banner,
     .wrapper-items {
@@ -1130,6 +1151,12 @@
     .nav-para {
         text-decoration: none;
         font-size: 1rem;
+    }
+
+    #nav-link,
+    .nav-para,
+    #login-button {
+        font-weight: 700;
     }
 
     #nav-cart {

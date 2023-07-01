@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shopping Cart | Flipkart</title>
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="../stylesheets/responsive.css">
+    <link rel="stylesheet" href="../stylesheets/cart.css">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <nav class="navbar">
+                <a href="#"><img src="../assets/logo.png" id="nav-logo"></a>
+                <div class="search-element">
+                    <table class="search-bar">
+                        <tr>
+                            <td>
+                                <input type="text" id="search" placeholder="Search for products, brands and more">
+                            </td>
+                            <td><a href="#"><img src="../assets/search.png"></a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="login-button" onclick="openLogin()"><a href="#">Login</a></div>
+            </nav>
+
+            <nav class="navbar-mobile">
+                <div id="mobile-nav">
+                    <div id="nav-row1">
+                        <a href="#"><img src="../assets/logo.png" id="nav-logo"></a>
+                        <div>
+                            <a href="#" onclick="openLogin()">Login</a>
+                        </div>
+                    </div>
+                    <div id="nav-row2">
+                        <table class="search-bar">
+                            <tr>
+                                <td><a href="#"><img src="../assets/search.png"></a></td>
+                                <td>
+                                    <input type="text" id="search" placeholder="Search for products, brands and more">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="header">
+                <button id="header-flipkart" onclick="flipkart()">Flipkart</button>
+                <button id="header-grocery" onclick="basket()">Grocery</button>
+            </div>
+            <div id="content-flipkart" class="content">
+                <img src="../assets/cart/cart-items.webp" alt="">
+                <span>Missing Cart items?</span>
+                <span>Login to see the items you added previously</span>
+                <button id="cart-login--btn">Login</button>
+            </div>
+            <div id="content-grocery" class="content">
+                <img src="../assets/cart/basket-items.webp" alt="">
+                <span>Your basket is empty?</span>
+                <span>Enjoy Upto 50% Savings on Grocery</span>
+                <button id="basket-login--btn">Shop Now</button>
+            </div>
+        </main>
+        <footer>
+            <span>Policies: <a href="#">Returns Policy</a> | <a href="#">Terms of Use</a>
+                | <a href="#">Security</a>
+                | <a href="#">Privacy</a>
+                | <a href="#">Infringement</a>
+            </span>
+            <span>&copy;2007-2023</span>
+            <span>Need help? Visit the <a href="#">Help Center</a>
+                or <a href="#">Contact Us</a></span>
+        </footer>
+    </div>
+    <script defer src="../js/cart.js"></script>
+</body>
+
+</html>

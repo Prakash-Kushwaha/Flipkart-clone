@@ -1,0 +1,238 @@
+:root {
+    --color-page-bg: #f1f3f6;
+    --box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+    --color-grey: #878787;
+    --color-dark-grey: #474747;
+    --color-brand-blue: #2874f0;
+    --color-brand-bbd: #2455f4;
+    --font-size-default: 14px;
+    --font-family: Roboto, Arial, sans-serif;
+    --color-brand-orange: #fb641b;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-default);
+    background: var(--color-page-bg);
+}
+
+main {
+    height: 35rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    width: 60%;
+    margin-top: 1rem;
+    height: 4rem;
+    background: #fff;
+    margin-bottom: 1rem;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header button {
+    font-family: var(--font-family);
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    width: 15rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+
+#header-flipkart,
+#header-grocery {
+    font-family: var(--font-family);
+    cursor: pointer;
+
+}
+
+#header-flipkart {
+    color: var(--color-brand-bbd);
+    border-bottom: 0.2rem solid var(--color-brand-bbd);
+}
+
+
+.content {
+    width: 60%;
+    height: 23rem;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#content-grocery {
+    display: none;
+}
+
+.content img {
+    width: 13rem;
+}
+
+.content button {
+    width: 11rem;
+    height: 2.5rem;
+    font-size: 0.9rem;
+    color: #fff;
+    background: var(--color-brand-orange);
+    border: none;
+    cursor: pointer;
+}
+
+.content span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.content span+span {
+    font-size: 0.8rem;
+    color: var(--color-grey);
+}
+
+
+
+footer {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    height: 20rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: top;
+    gap: 1rem;
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+    background: var(--color-page-bg);
+    padding: 3rem;
+}
+
+footer,
+footer a,
+footer>span a {
+    text-decoration: none;
+    color: var(--color-dark-grey);
+}
+
+footer span+span a {
+    color: var(--color-brand-blue);
+}
+
+@media (max-width: 485px) {
+
+    .content,
+    .header {
+        width: 95%;
+    }
+
+    .content {
+        height: 18rem;
+    }
+
+    .content img {
+        width: 10rem;
+    }
+
+    .content button {
+        width: 8rem;
+        height: 2rem;
+    }
+
+    footer {
+        height: 20rem;
+    }
+}
+
+@media (min-width: 485px) {
+
+    .content,
+    .header {
+        width: 95%;
+    }
+
+    .content {
+        height: 18rem;
+    }
+
+    .content img {
+        width: 10rem;
+    }
+
+    .content button {
+        width: 8rem;
+        height: 2rem;
+    }
+
+    footer {
+        height: 21rem;
+    }
+}
+
+@media (min-width: 812px) {
+    .content,
+    .header {
+        width: 80%;
+    }
+
+    .content {
+        height: 18rem;
+    }
+
+    .content img {
+        width: 10rem;
+    }
+
+    .content button {
+        width: 8rem;
+        height: 2rem;
+    }
+
+    footer {
+        height: 22rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .content,
+    .header {
+        width: 70%;
+    }
+    .header {
+        margin-top: 5rem;
+    }
+    .content {
+        height: 23rem;
+    }
+
+    .content img {
+        width: 13rem;
+    }
+
+    .content button {
+        width:11rem;
+        height: 2.5rem;
+    }
+
+    footer {
+        height: 21rem;
+    }
+}

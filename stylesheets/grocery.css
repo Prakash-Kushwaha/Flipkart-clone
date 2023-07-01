@@ -20,3 +20,29 @@
     display: block;
     color: var(--color-brand-bbd)
 }
+
+.category {
+    width: 5rem;
+    height: 7.3rem;
+}
+
+#login-button a {
+    color: var(--color-supermart-green);
+}
+
+#login-button a,
+.nav-para {
+    font-weight: 800;
+}
+
+@media (max-width: 485px) {
+    .navbar-mobile {
+        background: var(--color-supermart-green);
+    }
+}
+
+@media (min-width: 485px) {
+    .navbar-mobile {
+        background: var(--color-supermart-green);
+    }
+}

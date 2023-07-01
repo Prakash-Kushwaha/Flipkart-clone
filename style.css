@@ -345,16 +345,17 @@ table img {
     color: var(--color-dark-blue1);
 }
 
-#nav-link, .nav-para {
+#nav-link,
+.nav-para {
     text-decoration: none;
     color: var(--color-light-white-bg);
     font-size: var(--font-size-default);
-    font-weight: var(--font-medium);
+    font-weight: 800;
 }
 
 .nav-para {
     color: var(--color-light-white-bg);
-    font-weight: var(--font-medium);
+    font-weight: 800;
 }
 
 .nav-para {
@@ -388,7 +389,8 @@ table img {
     cursor: pointer;
 }
 
-.category>img, .category > a img {
+.category>img,
+.category>a img {
     width: 4rem;
 }
 
