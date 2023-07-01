@@ -1,5 +1,5 @@
 /* ----------- Media Queries ---------- */
-@media (max-width: 475px) {
+@media (max-width: 485px) {
     .login-window {
         width: 10rem;
         height: 20rem;
@@ -255,20 +255,20 @@
         margin-top: 0.1rem;
         height: 3rem;
         padding: 0.8rem;
-        font-size: 0.5rem;
+        font-size: 0.35rem;
     }
 
     .bottom-nav div img {
-        width: 0.6rem;
+        width: 0.5rem;
     }
 
     #payment-method {
-        width: 10rem;
+        width: 8rem;
     }
 
 }
 
-@media (min-width: 475px) {
+@media (min-width: 485px) {
     .login-window {
         width: 10rem;
         height: 20rem;
@@ -526,15 +526,15 @@
         margin-top: 0.1rem;
         height: 3rem;
         padding: 0.9rem;
-        font-size: 0.5rem;
+        font-size: 0.4rem;
     }
 
     .bottom-nav div img {
-        width: 0.60rem;
+        width: 0.55rem;
     }
 
     #payment-method {
-        width: 10rem;
+        width: 9rem;
     }
 
 }
@@ -745,7 +745,7 @@
         margin-top: 0.1rem;
         height: 3rem;
         padding: 0.9rem;
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
 
     .bottom-nav div img {
@@ -753,7 +753,7 @@
     }
 
     #payment-method {
-        width: 15rem;
+        width: 13rem;
     }
 }
 
@@ -1068,7 +1068,7 @@
 
 @media (min-width: 1536px) {
     .navbar {
-        height: 5rem;
+        height: 4rem;
         gap: 1.5rem;
     }
 
@@ -1082,11 +1082,11 @@
     }
 
     #search {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     table img {
-        width: 1.6rem;
+        width: 1.5rem;
     }
 
     #login-button {
@@ -1095,12 +1095,12 @@
     }
 
     #login-button a {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     #nav-link,
     .nav-para {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     #nav-cart {
@@ -1110,14 +1110,14 @@
 
     .items-bar {
         padding: 1.4rem;
-        gap: 2rem;
-        margin-top: 6em;
+        gap: 2.5rem;
+        margin-top: 4.6em;
         margin-bottom: 2rem;
     }
 
     .category {
         width: 6rem;
-        height: 10rem;
+        height: 8rem;
     }
 
     .category>img {
@@ -1127,7 +1127,7 @@
     .category,
     .category>a,
     .category span p {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .dp-menu {
