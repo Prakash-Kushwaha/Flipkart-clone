@@ -1,0 +1,58 @@
+:root {
+    --color-page-bg: #f1f3f6;
+    --box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+    --color-grey: #878787;
+    --color-dark-grey: #474747;
+    --color-brand-blue: #2874f0;
+    --color-brand-bbd: #2455f4;
+    --font-size-default: 14px;
+    --font-family: Roboto, Arial, sans-serif;
+    --color-brand-orange: #fb641b;
+}
+
+
+#container {
+    background: var(--color-page-bg);
+}
+
+main > div {
+    margin-top: 4rem;
+    height: 33rem;
+    margin-bottom: 1rem;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+main > div img {
+    width: 20rem;
+}
+main > div span {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+main > div span+span {
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: var(--color-grey);
+}
+
+main > div button {
+    width: 6rem;
+    height: 2rem;
+    background: var(--color-brand-bbd);
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+}

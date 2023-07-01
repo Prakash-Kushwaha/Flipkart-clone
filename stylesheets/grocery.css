@@ -1,8 +1,13 @@
 :root {
     --color-supermart-green: #26a541;
+    --color-page-bg: #f1f3f6;
+    --box-shadow: 0 0 11px rgba(33, 33, 33, .2);
 
 }
 
+#container {
+    background: var(--color-page-bg);
+}
 
 .navbar {
     background: var(--color-supermart-green);
@@ -35,6 +40,28 @@
     font-weight: 800;
 }
 
+main {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.main-content img {
+    width: 100%;
+    box-shadow: var(--box-shadow);
+}
+
 @media (max-width: 485px) {
     .navbar-mobile {
         background: var(--color-supermart-green);
@@ -50,6 +77,19 @@
 
     #login--right-pt form+span a {
         color: var(--color-supermart-green);
+    }
+
+    .items-bar--mobile {
+        padding-left: 8rem;
+    }
+
+    .category {
+        width: 5rem;
+        height: 4.2rem;
+    }
+
+    .category>a img {
+        width: 2.5rem;
     }
 }
 
@@ -68,5 +108,25 @@
 
     #login--right-pt form+span a {
         color: var(--color-supermart-green);
+    }
+
+    .category {
+        width: 5rem;
+        height: 4.2rem;
+    }
+
+    .category>a img {
+        width: 2.5rem;
+    }
+}
+
+@media (min-width: 812px) {
+    .category {
+        width: 5rem;
+        height: 8rem;
+    }
+
+    .category>img {
+        width: 3.5rem;
     }
 }
