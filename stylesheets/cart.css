@@ -115,7 +115,6 @@ footer {
     width: 100vw;
     position: fixed;
     bottom: 0;
-    height: 20rem;
     display: flex;
     justify-content: space-evenly;
     align-items: top;
@@ -156,6 +155,7 @@ footer span+span a {
         width: 8rem;
         height: 2rem;
     }
+<<<<<<< HEAD
 
     footer {
 <<<<<<< HEAD
@@ -164,6 +164,8 @@ footer span+span a {
         height: 14rem;
 >>>>>>> webpages
     }
+=======
+>>>>>>> webpages
 }
 
 @media (min-width: 485px) {
@@ -185,6 +187,7 @@ footer span+span a {
         width: 8rem;
         height: 2rem;
     }
+<<<<<<< HEAD
 
     footer {
 <<<<<<< HEAD
@@ -193,6 +196,8 @@ footer span+span a {
         height: 14rem;
 >>>>>>> webpages
     }
+=======
+>>>>>>> webpages
 }
 
 @media (min-width: 812px) {
@@ -213,6 +218,7 @@ footer span+span a {
         width: 8rem;
         height: 2rem;
     }
+<<<<<<< HEAD
 
     footer {
 <<<<<<< HEAD
@@ -221,6 +227,8 @@ footer span+span a {
         height: 18rem;
 >>>>>>> webpages
     }
+=======
+>>>>>>> webpages
 }
 
 @media (min-width: 1280px) {
@@ -243,6 +251,7 @@ footer span+span a {
         width:11rem;
         height: 2.5rem;
     }
+<<<<<<< HEAD
 
     footer {
 <<<<<<< HEAD
@@ -251,4 +260,6 @@ footer span+span a {
         height: 20rem;
 >>>>>>> webpages
     }
+=======
+>>>>>>> webpages
 }

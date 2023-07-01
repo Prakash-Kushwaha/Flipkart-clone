@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appliances Store</title>
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="../stylesheets/responsive.css">
+</head>
+
+<body>
+    <div id="container">
+        <section id="login">
+            <div class="login-box">
+                <div class="login-window">
+                    <div id="login--left-pt">
+                        <span id="title-login">Login</span>
+                        <span class="txt-login">Get access to your Orders, Wishlist
+                            and recommendations
+                        </span>
+                        <img src="../assets/login_img.png" alt="" class="sec-1--img">
+                    </div>
+                    <div id="login--right-pt">
+                        <img src="../assets/cancel.png" id="login-close" onclick="closeLogin()">
+                        <form>
+                            <div>
+                                <label for="email">Enter Email/Mobile number</label><br>
+                                <input type="text" id="email">
+                            </div>
+                            <div id="login-terms">By continuing, you agree to FlipKart's <a href="#">Terms of Use</a>
+                                and <a href="#">Privacy Policy</a>
+                            </div>
+                            <button class="otp-btn">Request OTP</button>
+                        </form>
+                        <span><a href="#">New to Flipkart? Create an account</a></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <header>
+            <nav class="navbar">
+                <a href="#"><img src="../assets/logo.png" id="nav-logo"></a>
+                <div class="search-element">
+                    <table class="search-bar">
+                        <tr>
+                            <td>
+                                <input type="text" id="search" placeholder="Search for products, brands and more">
+                            </td>
+                            <td><a href="#"><img src="../assets/search.png"></a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="login-button" onclick="openLogin()"><a href="#">Login</a></div>
+                <a href="../pages/more.html" class="nav-para">More</a>
+                <a href="../pages/cart.html" class="nav-para"><img id="nav-cart" src="../assets/cart.png"
+                        alt="">Cart</a>
+            </nav>
+
+            <nav class="navbar-mobile">
+                <div id="mobile-nav">
+                    <div id="nav-row1">
+                        <a href="#"><img src="../assets/logo.png" id="nav-logo"></a>
+                        <div>
+                            <a href="../pages/cart.html"><img src="../assets/cart.png" alt=""></a>
+                            <a href="#" onclick="openLogin()">Login</a>
+                        </div>
+                    </div>
+                    <div id="nav-row2">
+                        <table class="search-bar">
+                            <tr>
+                                <td><a href="#"><img src="../assets/search.png"></a></td>
+                                <td>
+                                    <input type="text" id="search" placeholder="Search for products, brands and more">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <script defer src="../main.js"></script>
+
+    </div>
+</body>
+
+</html>
