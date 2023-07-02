@@ -32,6 +32,10 @@
         gap: 0.6rem;
     }
 
+    #login--right-pt form input {
+        font-size: 0.8rem;
+    }
+
     #login--right-pt form label {
         font-size: 0.7rem;
     }
@@ -161,7 +165,7 @@
 
     #banner,
     .slideshow-container img {
-        height: 7rem;
+        height: 6rem;
     }
 
     .cover {
@@ -311,6 +315,10 @@
 
     #login--right-pt form {
         gap: 0.6rem;
+    }
+
+    #login--right-pt form input {
+        font-size: 0.8rem;
     }
 
     #login--right-pt form label {
@@ -598,6 +606,10 @@
         gap: 1rem;
     }
 
+    #login--right-pt form input {
+        font-size: 1rem;
+    }
+
     #login--right-pt form label {
         font-size: 0.9rem;
     }
@@ -674,7 +686,7 @@
 
     .category {
         width: 5rem;
-        height: 6rem;
+        height: 7rem;
     }
 
     .category>img,
