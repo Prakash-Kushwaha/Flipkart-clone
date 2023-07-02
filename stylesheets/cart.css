@@ -22,7 +22,6 @@ body {
 }
 
 main {
-    height: 35rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -121,7 +120,7 @@ footer {
     gap: 1rem;
     box-shadow: var(--box-shadow);
     background: var(--color-page-bg);
-    padding: 3rem;
+    padding: 1rem;
 }
 
 footer,
@@ -137,56 +136,74 @@ footer span+span a {
 
 @media (max-width: 485px) {
 
+    .header {
+        height: 3rem;
+    }
     .content,
     .header {
         width: 95%;
     }
 
     .content {
-        height: 18rem;
+        height: 13rem;
     }
 
     .content img {
-        width: 10rem;
+        width: 8rem;
     }
 
     .content button {
-        width: 8rem;
-        height: 2rem;
-    }
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-    footer {
-<<<<<<< HEAD
-        height: 18rem;
-=======
-        height: 14rem;
->>>>>>> webpages
-    }
-=======
->>>>>>> webpages
-=======
-
-    footer {
-        height: 4rem;
+        width: 6rem;
+        height: 1.7rem;
+        font-size: 0.7rem;
     }
 
-    footer span a, footer span {
+    .content span {
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    .content span+span {
         font-size: 0.6rem;
+        color: var(--color-grey);
     }
->>>>>>> webpages
+
+    footer {
+        width: 100vw;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: top;
+        gap: 0.3rem;
+        box-shadow: var(--box-shadow);
+        background: var(--color-page-bg);
+    }
+
+    footer,
+    footer a,
+    footer>span a {
+        font-size: 0.6rem;
+        text-decoration: none;
+        color: var(--color-dark-grey);
+    }
+
+    footer span+span a {
+        color: var(--color-brand-blue);
+    }
 }
 
 @media (min-width: 485px) {
-
+    .header {
+        height: 3rem;
+    }
     .content,
     .header {
         width: 95%;
     }
 
     .content {
-        height: 18rem;
+        height: 16rem;
     }
 
     .content img {
@@ -197,30 +214,47 @@ footer span+span a {
         width: 8rem;
         height: 2rem;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-    footer {
-<<<<<<< HEAD
-        height: 20rem;
-=======
-        height: 14rem;
->>>>>>> webpages
-    }
-=======
->>>>>>> webpages
-=======
-    footer {
-        height: 5rem;
+    .content span {
+        font-size: 1rem;
+        font-weight: 500;
     }
 
-    footer span a, footer span {
-        font-size: 0.65rem;
+    .content span+span {
+        font-size: 0.8rem;
+        color: var(--color-grey);
     }
->>>>>>> webpages
+
+
+
+    footer {
+        width: 100vw;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: top;
+        gap: 1rem;
+        box-shadow: var(--box-shadow);
+        background: var(--color-page-bg);
+    }
+
+    footer,
+    footer a,
+    footer>span a {
+        font-size: 0.7rem;
+        text-decoration: none;
+        color: var(--color-dark-grey);
+    }
+
+    footer span+span a {
+        color: var(--color-brand-blue);
+
+    }
 }
 
 @media (min-width: 812px) {
+
     .content,
     .header {
         width: 80%;
@@ -238,29 +272,57 @@ footer span+span a {
         width: 8rem;
         height: 2rem;
     }
-<<<<<<< HEAD
+
+    .content span {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .content span+span {
+        font-size: 0.8rem;
+        color: var(--color-grey);
+    }
 
     footer {
-<<<<<<< HEAD
-        height: 20rem;
-=======
-        height: 18rem;
->>>>>>> webpages
+        width: 100vw;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: top;
+        gap: 1rem;
+        box-shadow: var(--box-shadow);
+        background: var(--color-page-bg);
+        padding: 2rem;
     }
-=======
->>>>>>> webpages
+
+    footer,
+    footer a,
+    footer>span a {
+
+        text-decoration: none;
+        color: var(--color-dark-grey);
+    }
+
+    footer span+span a {
+        color: var(--color-brand-blue);
+
+    }
 }
 
 @media (min-width: 1280px) {
+
     .content,
     .header {
-        width: 70%;
+        width: 60%;
     }
+
     .header {
         margin-top: 5rem;
     }
+
     .content {
-        height: 23rem;
+        height: 20rem;
     }
 
     .content img {
@@ -268,28 +330,44 @@ footer span+span a {
     }
 
     .content button {
-        width:11rem;
+        width: 11rem;
         height: 2.5rem;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-    footer {
-<<<<<<< HEAD
-        height: 16rem;
-=======
-        height: 20rem;
->>>>>>> webpages
+    .content span {
+        font-size: 1rem;
+        font-weight: 500;
     }
-=======
->>>>>>> webpages
-=======
 
-    footer {
-        height: 7rem;
-    }
-    footer span a, footer span {
+    .content span+span {
         font-size: 0.8rem;
+        color: var(--color-grey);
     }
->>>>>>> webpages
+
+
+
+    footer {
+        width: 100vw;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: top;
+        gap: 1rem;
+        box-shadow: var(--box-shadow);
+        background: var(--color-page-bg);
+        padding: 2rem;
+    }
+
+    footer,
+    footer a,
+    footer>span a {
+        text-decoration: none;
+        color: var(--color-dark-grey);
+    }
+
+    footer span+span a {
+        color: var(--color-brand-blue);
+
+    }
 }
