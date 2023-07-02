@@ -1,5 +1,8 @@
 /* ----------- Media Queries ---------- */
 @media (max-width: 485px) {
+    .navbar-mobile {
+        background: #f00 !important;
+    }
     .login-window {
         width: 10rem;
         height: 15rem;
@@ -281,6 +284,9 @@
 }
 
 @media (min-width: 485px) {
+    .navbar-mobile {
+        background: #0f0 !important;
+    }
     .login-window {
         width: 10rem;
         height: 16rem;
@@ -561,6 +567,9 @@
 }
 
 @media (min-width: 812px) {
+    .navbar {
+        background: #ff0 !important;
+    }
     .login-window {
         width: 30rem;
         height: 25rem;
