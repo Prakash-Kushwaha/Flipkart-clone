@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../stylesheets/grocery.css">
 </head>
 
-<body>
+<body id="body">
     <div id="container">
         <section id="login">
             <div class="login-box">
@@ -39,46 +39,45 @@
                 </div>
             </div>
         </section>
-        <header>
-            <nav class="navbar">
-                <a href="#"><img src="../assets/grocery/grocery-logo.svg" id="nav-logo"></a>
-                <div class="search-element">
+        <nav class="navbar">
+            <a href="#"><img src="../assets/grocery/grocery-logo.svg" id="nav-logo"></a>
+            <div class="search-element">
+                <table class="search-bar">
+                    <tr>
+                        <td>
+                            <input type="text" id="search" placeholder="Search grocery products">
+                        </td>
+                        <td><a href="#"><img src="../assets/search.png"></a></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="login-button" onclick="openLogin()"><a href="#">Login</a></div>
+            <a href="https://www.flipkart.com/mobile-apps?otracker=ch_vn_mobile_apps" class="nav-para">More</a>
+            <a href="../pages/cart.html" class="nav-para"><img id="nav-cart" src="../assets/cart.png" alt="">Cart</a>
+        </nav>
+
+        <nav class="navbar-mobile">
+            <div id="mobile-nav">
+                <div id="nav-row1">
+                    <a href="#"><img src="../assets/grocery/grocery-logo.svg" id="nav-logo"></a>
+                    <div>
+                        <a href="../pages/cart.html"><img src="../assets/cart.png" alt=""></a>
+                        <a href="#" onclick="openLogin()">Login</a>
+                    </div>
+                </div>
+                <div id="nav-row2">
                     <table class="search-bar">
                         <tr>
-                            <td>
-                                <input type="text" id="search" placeholder="Search grocery products">
-                            </td>
                             <td><a href="#"><img src="../assets/search.png"></a></td>
+                            <td>
+                                <input type="text" id="search" placeholder="Search for products, brands and more">
+                            </td>
                         </tr>
                     </table>
                 </div>
-                <div id="login-button" onclick="openLogin()"><a href="#">Login</a></div>
-                <a href="https://www.flipkart.com/mobile-apps?otracker=ch_vn_mobile_apps" class="nav-para">More</a>
-                <a href="../pages/cart.html" class="nav-para"><img id="nav-cart" src="../assets/cart.png"
-                        alt="">Cart</a>
-            </nav>
-
-            <nav class="navbar-mobile">
-                <div id="mobile-nav">
-                    <div id="nav-row1">
-                        <a href="#"><img src="../assets/grocery/grocery-logo.svg" id="nav-logo"></a>
-                        <div>
-                            <a href="../pages/cart.html"><img src="../assets/cart.png" alt=""></a>
-                            <a href="#" onclick="openLogin()">Login</a>
-                        </div>
-                    </div>
-                    <div id="nav-row2">
-                        <table class="search-bar">
-                            <tr>
-                                <td><a href="#"><img src="../assets/search.png"></a></td>
-                                <td>
-                                    <input type="text" id="search" placeholder="Search for products, brands and more">
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </nav>
+            </div>
+        </nav>
+        <header>
 
             <nav class="items-bar--mobile">
                 <section class="category grocery"><a href="#"><img src="../assets/grocery/staples.webp"
@@ -264,7 +263,6 @@
 
             </nav>
         </header>
-        <script defer src="../main.js"></script>
         <main>
             <section class="main-content">
                 <img src="../assets/grocery/featured-brands.png" alt="">
@@ -379,6 +377,8 @@
             </nav>
         </footer>
     </div>
+    <script defer src="../main.js"></script>
+
 </body>
 
 </html>

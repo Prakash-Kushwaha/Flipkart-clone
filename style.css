@@ -144,7 +144,7 @@ body {
     display: none;
     position: absolute;
     z-index: 5;
-    background: #0009;
+    background: rgba(63, 63, 63, 0.253);
     pointer-events: visible;
 }
 
@@ -174,7 +174,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    border-radius: 4px 0 0 4px;
+    border-radius: 6px 0 0 6px;
     flex-grow: 1;
 }
 
@@ -283,7 +283,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 3;
 }
@@ -376,7 +376,6 @@ table img {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin-top: 4.6em;
     margin-bottom: 1.3em;
     box-shadow: 0 0 11px rgba(33, 33, 33, .2);
 }

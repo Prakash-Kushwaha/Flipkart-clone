@@ -2,16 +2,16 @@
 @media (max-width: 485px) {
     .login-window {
         width: 10rem;
-        height: 20rem;
+        height: 15rem;
     }
 
     #title-login {
-        font-size: 1rem;
+        font-size: 0.8rem;
         font-weight: 800;
     }
 
     .txt-login {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
         line-height: 0.8rem;
         width: 4rem;
     }
@@ -47,11 +47,11 @@
     .otp-btn {
         width: 8rem;
         height: 1.2rem;
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }
 
     #login--right-pt form+span a {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }
 
     #login-close {
@@ -75,7 +75,7 @@
         align-items: center;
         gap: 1rem;
         z-index: 3;
-        position: fixed;
+        position: sticky;
         top: 0;
     }
 
@@ -138,7 +138,6 @@
         align-items: center;
         gap: 1rem;
         font-size: 0.6rem;
-        margin-top: 4.99rem;
         margin-bottom: 1.3em;
         box-shadow: 0 0 11px rgba(33, 33, 33, .2);
         overflow-x: scroll;
@@ -283,16 +282,16 @@
 @media (min-width: 485px) {
     .login-window {
         width: 10rem;
-        height: 20rem;
+        height: 16rem;
     }
 
     #title-login {
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-weight: 800;
     }
 
     .txt-login {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
         line-height: 0.8rem;
         width: 4rem;
     }
@@ -357,7 +356,7 @@
         align-items: center;
         gap: 1rem;
         z-index: 3;
-        position: fixed;
+        position: sticky;
         top: 0;
     }
 
@@ -420,7 +419,6 @@
         align-items: center;
         gap: 1rem;
         font-size: 0.6rem;
-        margin-top: 6rem;
         margin-bottom: 1.3em;
         box-shadow: 0 0 11px rgba(33, 33, 33, .2);
         overflow-x: scroll;
@@ -640,7 +638,7 @@
         justify-content: center;
         align-items: center;
         gap: 1rem;
-        position: fixed;
+        position: sticky;
         top: 0;
         z-index: 3;
     }
@@ -664,7 +662,6 @@
         justify-content: center;
         align-items: center;
         gap: 1rem;
-        margin-top: 4.6em;
         margin-bottom: 1.3em;
         box-shadow: 0 0 11px rgba(33, 33, 33, .2);
     }
@@ -1168,7 +1165,6 @@
     .items-bar {
         padding: 1.4rem;
         gap: 2.5rem;
-        margin-top: 4.6em;
         margin-bottom: 2rem;
     }
 
